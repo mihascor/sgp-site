@@ -98,18 +98,16 @@ export const Header = () => {
               <div className={styles.navItem}>
                 <button
                   type="button"
-                  className={`${styles.navButton} ${
-                    openDesktopMenu === "company" ? styles.navButtonActive : ""
-                  }`}
+                  className={`${styles.navButton} ${openDesktopMenu === "company" ? styles.navButtonActive : ""
+                    }`}
                   onClick={() => toggleDesktopMenu("company")}
                   aria-expanded={openDesktopMenu === "company"}
                   aria-controls="desktop-company-menu"
                 >
                   Компания
                   <span
-                    className={`${styles.arrow} ${
-                      openDesktopMenu === "company" ? styles.arrowOpen : ""
-                    }`}
+                    className={`${styles.arrow} ${openDesktopMenu === "company" ? styles.arrowOpen : ""
+                      }`}
                   />
                 </button>
 
@@ -136,18 +134,16 @@ export const Header = () => {
               <div className={styles.navItem}>
                 <button
                   type="button"
-                  className={`${styles.navButton} ${
-                    openDesktopMenu === "activity" ? styles.navButtonActive : ""
-                  }`}
+                  className={`${styles.navButton} ${openDesktopMenu === "activity" ? styles.navButtonActive : ""
+                    }`}
                   onClick={() => toggleDesktopMenu("activity")}
                   aria-expanded={openDesktopMenu === "activity"}
                   aria-controls="desktop-activity-menu"
                 >
                   Деятельность
                   <span
-                    className={`${styles.arrow} ${
-                      openDesktopMenu === "activity" ? styles.arrowOpen : ""
-                    }`}
+                    className={`${styles.arrow} ${openDesktopMenu === "activity" ? styles.arrowOpen : ""
+                      }`}
                   />
                 </button>
 
@@ -182,9 +178,9 @@ export const Header = () => {
           </div>
 
           <div className={styles.right}>
-            <button type="button" className={styles.ctaButton}>
+            <a href="tel:+78172239695" className={styles.ctaButton}>
               Обсудить проект
-            </button>
+            </a>
 
             <button
               type="button"
@@ -213,9 +209,8 @@ export const Header = () => {
                 >
                   <span>Компания</span>
                   <span
-                    className={`${styles.arrow} ${
-                      openMobileSubmenu === "company" ? styles.arrowOpen : ""
-                    }`}
+                    className={`${styles.arrow} ${openMobileSubmenu === "company" ? styles.arrowOpen : ""
+                      }`}
                   />
                 </button>
 
@@ -244,9 +239,8 @@ export const Header = () => {
                 >
                   <span>Деятельность</span>
                   <span
-                    className={`${styles.arrow} ${
-                      openMobileSubmenu === "activity" ? styles.arrowOpen : ""
-                    }`}
+                    className={`${styles.arrow} ${openMobileSubmenu === "activity" ? styles.arrowOpen : ""
+                      }`}
                   />
                 </button>
 
@@ -274,9 +268,9 @@ export const Header = () => {
                 Контакты
               </Link>
 
-              <button type="button" className={styles.mobileCtaButton}>
+              <a href="tel:+78172239695" className={styles.mobileCtaButton}>
                 Обсудить проект
-              </button>
+              </a>
             </div>
           </div>
         )}
