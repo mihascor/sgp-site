@@ -1,6 +1,7 @@
 import type { Metadata } from "next"
 import "./globals.css"
 import { Header } from "@/components/layout/header/header"
+import { CookieBanner } from '@/components/shared/cookie-banner/cookie-banner'
 
 export const metadata: Metadata = {
   title: "СГП",
@@ -17,6 +18,7 @@ export default function RootLayout({
       <body>
         <Header />
         {children}
+        <CookieBanner />
       </body>
     </html>
   )
