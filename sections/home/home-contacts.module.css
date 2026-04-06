@@ -1,0 +1,196 @@
+.section {
+    padding: 120px 0 140px;
+  }
+  
+  .container {
+    max-width: 1160px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .title {
+    margin: 0 0 80px;
+    font-family: inherit;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 60px;
+    line-height: 105%;
+    letter-spacing: -0.04em;
+    text-transform: uppercase;
+    color: #0f1c42;
+  }
+  
+  .top {
+    display: grid;
+    grid-template-columns: 281px 236px minmax(320px, 516px);
+    gap: 40px 82px;
+    margin-bottom: 70px;
+  }
+  
+  .infoGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .label {
+    margin: 0;
+    font-family: inherit;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 135%;
+    color: #7d869c;
+  }
+  
+  .phone,
+  .email,
+  .location {
+    margin: 0;
+    text-decoration: none;
+    font-family: inherit;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 110%;
+    letter-spacing: -0.02em;
+    color: #0f1c42;
+  }
+  
+  .legalBlock {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 570px;
+    margin-bottom: 104px;
+  }
+  
+  .legalAddress {
+    margin: 0;
+    font-family: inherit;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+    letter-spacing: -0.02em;
+    color: #0f1c42;
+  }
+  
+  .content {
+    display: grid;
+    grid-template-columns: minmax(0, 570px) minmax(0, 472px);
+    gap: 118px;
+    align-items: stretch;
+  }
+  
+  .mapWrap {
+    width: 100%;
+    height: 534px;
+    overflow: hidden;
+    border-radius: 10px;
+    background: #f3f5fb;
+  }
+  
+  .map {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: 0;
+  }
+  
+  .card {
+    height: 534px;
+    padding: 40px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-sizing: border-box;
+    overflow: auto;
+  }
+  
+  .officeList {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 15px;
+  }
+  
+  .officeItem {
+    gap: 4px;
+  }
+  
+  .city {
+    margin: 0;
+    font-family: inherit;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 110%;
+    letter-spacing: -0.04em;
+    color: #032ca6;
+  }
+  
+  .address {
+    margin: 0;
+    font-family: inherit;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+    letter-spacing: -0.02em;
+    color: #0f1c42;
+  }
+  
+  @media (max-width: 1199px) {
+    .top {
+      grid-template-columns: repeat(2, minmax(220px, 1fr));
+      gap: 32px;
+    }
+  
+    .content {
+      grid-template-columns: 1fr;
+      gap: 32px;
+    }
+  
+    .legalBlock {
+      margin-bottom: 64px;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .section {
+      padding: 80px 0 100px;
+    }
+  
+    .container {
+      padding: 0 16px;
+    }
+  
+    .title {
+      margin-bottom: 48px;
+      font-size: 40px;
+    }
+  
+    .top {
+      grid-template-columns: 1fr;
+      gap: 28px;
+      margin-bottom: 40px;
+    }
+  
+    .phone,
+    .email,
+    .location {
+      font-size: 24px;
+    }
+  
+    .legalBlock {
+      margin-bottom: 40px;
+    }
+  
+    .mapWrap {
+      height: 360px;
+    }
+  
+    .card {
+      padding: 24px 20px;
+    }
+  }
