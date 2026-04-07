@@ -2,7 +2,7 @@ import Link from "next/link"
 import { Container } from "@/components/shared/container/Container"
 import styles from "./about-hero.module.css"
 
-// направления (карточки)
+// направления
 const directions = [
   { title: "Инженерные изыскания", href: "/engineering-surveys" },
   { title: "Землеустройство", href: "/land-management" },
@@ -13,27 +13,26 @@ const directions = [
 export const AboutHero = () => {
   return (
     <section className={styles.hero}>
-      {/* затемнение поверх фоновой картинки */}
+      {/* затемнение */}
       <div className={styles.overlay} />
 
       <Container>
-        <div className={styles.row}>
+        {/* главный вертикальный layout */}
+        <div className={styles.inner}>
 
-          {/* левый контент */}
-          <div className={styles.content}>
+          {/* верх — текст */}
+          <div className={styles.textBlock}>
+            <h1 className={styles.title}>Связьгазпроект</h1>
 
-            {/* заголовок + описание */}
-            <div className={styles.textBlock}>
-              <h1 className={styles.title}>Связьгазпроект</h1>
+            <p className={styles.description}>
+              Специализируемся на проектировании комплексов
+              инженерно-технических средств охраны для крупных
+              и стратегически важных объектов
+            </p>
+          </div>
 
-              <p className={styles.description}>
-                Специализируемся на проектировании комплексов
-                инженерно-технических средств охраны для крупных
-                и стратегически важных объектов
-              </p>
-            </div>
-
-            {/* направления (теги) */}
+          {/* низ — теги + кнопка */}
+          <div className={styles.bottom}>
             <div className={styles.tags}>
               {directions.map((item) => (
                 <Link key={item.title} href={item.href} className={styles.tag}>
@@ -41,15 +40,14 @@ export const AboutHero = () => {
                 </Link>
               ))}
             </div>
-          </div>
 
-          {/* кнопка справа */}
-          <Link href="/contacts" className={styles.button}>
-            <span className={styles.buttonDot} />
-            <span className={styles.buttonText}>
-              Бесплатная консультация
-            </span>
-          </Link>
+            <Link href="/contacts" className={styles.button}>
+              <span className={styles.buttonDot} />
+              <span className={styles.buttonText}>
+                Бесплатная консультация
+              </span>
+            </Link>
+          </div>
 
         </div>
       </Container>
