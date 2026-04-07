@@ -4,8 +4,8 @@ import { Header } from "@/components/layout/header/header"
 import { CookieBanner } from '@/components/shared/cookie-banner/cookie-banner'
 
 export const metadata: Metadata = {
-  title: "СГП",
-  description: "Сайт компании",
+  title: "Связьгазпроект",
+  description: "Сайт компании ООО «Связьгазпроект»",
 }
 
 export default function RootLayout({
