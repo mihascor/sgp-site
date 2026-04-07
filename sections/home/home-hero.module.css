@@ -5,7 +5,7 @@
    .hero {
     position: relative; /* чтобы overlay позиционировался внутри секции */
     height: 540px; /* высота hero из макета */
-    background-image: url("/hero.png"); /* фоновое изображение */
+    background-image: url("/home-hero.webp"); /* фоновое изображение */
     background-size: cover; /* картинка покрывает весь блок */
     background-position: center; /* центрируем фон */
     color: #ffffff; /* базовый цвет текста */
