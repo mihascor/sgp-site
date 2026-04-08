@@ -1,6 +1,7 @@
 import styles from "./about-reliability.module.css";
 import { Container } from "@/components/shared/container/Container";
 
+// Неизменная надёжность
 export const AboutReliability = () => {
     return (
         <section className={styles.section}>
@@ -81,7 +82,7 @@ export const AboutReliability = () => {
                         <ul className={styles.list}>
                             <li>
                                 <img
-                                    src="/element/about-reliability-mark.svg"
+                                    src="/element/about/about-reliability.svg"
                                     alt=""
                                     aria-hidden="true"
                                     className={styles.listIcon}
@@ -91,7 +92,7 @@ export const AboutReliability = () => {
 
                             <li>
                                 <img
-                                    src="/element/about-reliability-mark.svg"
+                                    src="/element/about/about-reliability.svg"
                                     alt=""
                                     aria-hidden="true"
                                     className={styles.listIcon}
@@ -101,7 +102,7 @@ export const AboutReliability = () => {
 
                             <li>
                                 <img
-                                    src="/element/about-reliability-mark.svg"
+                                    src="/element/about/about-reliability.svg"
                                     alt=""
                                     aria-hidden="true"
                                     className={styles.listIcon}

@@ -1,0 +1,295 @@
+.section {
+  padding: 80px 0;
+  overflow: hidden;
+}
+
+/* Основной фон блока */
+.block {
+  background: radial-gradient(84.99% 97.77% at 38.04% 2.23%, #eef1f7 0%, #c3d1ed 100%);
+  border-radius: 100px;
+  padding: 120px 60px 72px;
+}
+
+/* Заголовок */
+.title {
+  margin: 0;
+  text-align: center;
+  font-weight: 600;
+  font-size: 60px;
+  line-height: 1.05;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+  color: #0f1c42;
+}
+
+/* Верхняя компоновка */
+.top {
+  margin-top: 82px;
+  display: grid;
+  grid-template-columns: 472px minmax(0, 1fr);
+  gap: 56px 80px;
+  align-items: start;
+}
+
+/* Карточка слева */
+.infoCard {
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 40px 60px;
+}
+
+.infoTitle {
+  margin: 0;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 1.1;
+  letter-spacing: -0.04em;
+  color: #0f1c42;
+}
+
+.infoText {
+  margin: 20px 0 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.35;
+  color: #0f1c42;
+}
+
+/* Группы городов */
+.officeGroups {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-top: 17px;
+}
+
+.officeRow {
+  display: grid;
+  grid-template-columns: 135px minmax(0, 1fr);
+  align-items: center;
+  column-gap: 20px;
+  row-gap: 10px;
+}
+
+.officeLabel {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.35;
+  color: #0f1c42;
+}
+
+.officeTags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+/* Кнопки городов */
+.cityButton {
+  appearance: none;
+  border: none;
+  border-radius: 100px;
+  padding: 5px 20px;
+  min-height: 32px;
+  background: #ffffff;
+  color: #0f1c42;
+  font: inherit;
+  font-size: 16px;
+  line-height: 1.35;
+  cursor: pointer;
+  transition:
+    background-color 0.25s ease,
+    color 0.25s ease,
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.cityButton:hover,
+.cityButton:focus-visible {
+  background: #032ca6;
+  color: #ffffff;
+  outline: none;
+}
+
+.cityButtonActive {
+  background: #032ca6;
+  color: #ffffff;
+}
+
+.cityButton:active {
+  transform: translateY(1px);
+}
+
+/* Карта */
+.mapArea {
+  position: relative;
+  margin-top: 56px;
+}
+
+.map {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* Маркер поверх карты */
+.marker {
+  position: absolute;
+  left: var(--marker-x);
+  top: var(--marker-y);
+  width: 52px;
+  height: auto;
+  transform: translate(-50%, -100%);
+  transition:
+    left 0.35s ease,
+    top 0.35s ease,
+    transform 0.35s ease;
+  pointer-events: none;
+  z-index: 2;
+}
+
+/* ===== 1024 ===== */
+@media (max-width: 1024px) {
+  .section {
+    padding: 64px 0;
+  }
+
+  .block {
+    border-radius: 64px;
+    padding: 88px 40px 56px;
+  }
+
+  .title {
+    font-size: 48px;
+  }
+
+  .top {
+    margin-top: 56px;
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .infoCard {
+    max-width: 520px;
+    padding: 32px 36px;
+  }
+
+  .officeGroups {
+    padding-top: 0;
+  }
+
+  .mapArea {
+    margin-top: 40px;
+  }
+
+  .marker {
+    width: 44px;
+  }
+}
+
+/* ===== 768 ===== */
+@media (max-width: 768px) {
+  .section {
+    padding: 48px 0;
+  }
+
+  .block {
+    border-radius: 40px;
+    padding: 56px 24px 40px;
+  }
+
+  .title {
+    font-size: 34px;
+    line-height: 1.08;
+  }
+
+  .top {
+    margin-top: 40px;
+    gap: 24px;
+  }
+
+  .infoCard {
+    padding: 24px;
+  }
+
+  .infoTitle {
+    font-size: 20px;
+  }
+
+  .infoText {
+    margin-top: 16px;
+    font-size: 15px;
+  }
+
+  .officeRow {
+    grid-template-columns: 1fr;
+    align-items: start;
+    gap: 8px;
+  }
+
+  .officeLabel {
+    font-size: 15px;
+  }
+
+  .officeTags {
+    gap: 8px;
+  }
+
+  .cityButton {
+    font-size: 15px;
+  }
+
+  .mapArea {
+    margin-top: 32px;
+  }
+
+  .marker {
+    width: 38px;
+  }
+}
+
+/* ===== 480 ===== */
+@media (max-width: 480px) {
+  .section {
+    padding: 40px 0;
+  }
+
+  .block {
+    border-radius: 28px;
+    padding: 40px 16px 28px;
+  }
+
+  .title {
+    font-size: 26px;
+  }
+
+  .infoCard {
+    padding: 20px;
+  }
+
+  .infoTitle {
+    font-size: 18px;
+  }
+
+  .infoText {
+    font-size: 14px;
+  }
+
+  .officeGroups {
+    gap: 12px;
+  }
+
+  .officeLabel {
+    font-size: 14px;
+  }
+
+  .cityButton {
+    padding: 6px 16px;
+    min-height: 30px;
+    font-size: 14px;
+  }
+
+  .marker {
+    width: 32px;
+  }
+}

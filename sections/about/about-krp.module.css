@@ -1,0 +1,247 @@
+.section {
+    padding: 80px 0;
+    overflow: hidden;
+  }
+  
+  /* Белый фон секции */
+  .background {
+    width: 100%;
+    background: #ffffff;
+    border-radius: 100px 100px 0 0;
+  }
+  
+  /* Контент */
+  .content {
+    padding: 140px 0 120px;
+  }
+  
+  /* Верх */
+  .head {
+    display: grid;
+    grid-template-columns: minmax(0, 550px) minmax(0, 1fr);
+    align-items: end;
+    column-gap: 40px;
+    row-gap: 24px;
+    margin-bottom: 56px;
+  }
+  
+  .headLeft {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .eyebrowDot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #6ae6da;
+  }
+  
+  .eyebrowText {
+    font-size: 16px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #869cb0;
+  }
+  
+  .title {
+    margin: 0;
+    max-width: 550px;
+    font-weight: 600;
+    font-size: 45px;
+    line-height: 105%;
+    letter-spacing: -0.04em;
+    text-transform: uppercase;
+    color: #0f1c42;
+  }
+  
+  .lead {
+    margin: 0;
+    max-width: 540px;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 135%;
+    color: #0f1c42;
+  }
+  
+  /* Сетка */
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  
+  /* Карточка */
+  .card {
+    min-height: 326px;
+    padding: 40px 34px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  
+    background: #eef1f7;
+    border-radius: 10px;
+  
+    transition: all 0.3s ease;
+  }
+  
+  /* Верх карточки */
+  .cardTop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /* Заголовок */
+  .cardTitle {
+    margin: 0;
+    font-size: 24px;
+    font-weight: 500;
+    letter-spacing: -0.04em;
+    color: #0f1c42;
+  
+    transition: color 0.3s ease;
+  }
+  
+  /* Кружок */
+  .iconCircle {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: #c3d2fe;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    transition: background 0.3s ease;
+  }
+  
+  /* Линия */
+  .divider {
+    border-top: 1px dashed rgba(125, 134, 156, 0.4);
+    transition: border-color 0.3s ease;
+  }
+  
+  /* Текст */
+  .cardText {
+    font-size: 16px;
+    line-height: 135%;
+    color: #0f1c42;
+  
+    transition: color 0.3s ease;
+  }
+  
+  /* Ссылка */
+  .link {
+    margin-top: auto;
+    font-size: 16px;
+    font-weight: 500;
+    color: #032ca6;
+    text-decoration: none;
+  
+    transition: color 0.3s ease;
+  }
+  
+  /* ===== HOVER (десктоп) ===== */
+  @media (hover: hover) and (pointer: fine) {
+    .card:hover {
+      background: #032ca6;
+    }
+  
+    .card:hover .cardTitle {
+      color: #ffffff;
+    }
+  
+    .card:hover .cardText {
+      color: #ffffff;
+    }
+  
+    .card:hover .link {
+      color: #ffffff;
+    }
+  
+    .card:hover .iconCircle {
+      background: #ffffff;
+    }
+  
+    .card:hover .divider {
+      border-top-color: rgba(255, 255, 255, 0.2);
+    }
+  }
+  
+  /* ===== АДАПТИВ ===== */
+  
+  @media (max-width: 1024px) {
+    .content {
+      padding: 110px 0 96px;
+    }
+  
+    .head {
+      grid-template-columns: 1fr;
+    }
+  
+    .title {
+      font-size: 40px;
+    }
+  
+    .lead {
+      font-size: 22px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .grid {
+      grid-template-columns: 1fr;
+    }
+  
+    .content {
+      padding: 80px 0;
+    }
+  
+    .title {
+      font-size: 34px;
+    }
+  
+    .lead {
+      font-size: 20px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .section {
+      padding: 48px 0;
+    }
+  
+    .content {
+      padding: 56px 0;
+    }
+  
+    .title {
+      font-size: 28px;
+    }
+  
+    .lead {
+      font-size: 18px;
+    }
+  
+    .card {
+      padding: 24px 20px;
+    }
+  
+    .cardTitle {
+      font-size: 20px;
+    }
+  
+    .iconCircle {
+      width: 52px;
+      height: 52px;
+    }
+  }

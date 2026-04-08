@@ -1,0 +1,177 @@
+.section {
+    padding: 120px 0;
+}
+
+/* Общий контейнер секции */
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+/* Верхний блок */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+/* Левая часть */
+.left {
+    max-width: 550px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Лейбл (точка + текст) */
+.label {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    font-size: 16px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #869cb0;
+}
+
+/* Декоративная точка (ellipse из Figma) */
+.dot {
+    width: 12px;
+    height: 12px;
+    background: #6ae6da;
+    border-radius: 50%;
+}
+
+/* Заголовок */
+.title {
+    font-size: 45px;
+    line-height: 105%;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: -0.04em;
+    color: #0f1c42;
+}
+
+/* Описание справа */
+.description {
+    max-width: 472px;
+    font-size: 24px;
+    line-height: 135%;
+    letter-spacing: -0.04em;
+    color: #0f1c42;
+}
+
+/* Карточки */
+.cards {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+/* Карточка */
+.card {
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 40px 60px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+/* Верх карточки */
+.cardHeader {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    padding-bottom: 15px;
+    border-bottom: 1px dashed rgba(125, 134, 156, 0.6);
+
+    font-size: 16px;
+    color: #032ca6;
+}
+
+/* Иконка из public */
+.icon {
+    width: 17px;
+    height: 17px;
+    flex-shrink: 0;
+}
+
+/* Контент карточки */
+.cardBody {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Заголовок внутри карточки */
+.cardTitle {
+    font-size: 22px;
+    color: #0f1c42;
+}
+
+/* Блок с плашками */
+.badges {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* Плашка */
+.badge {
+    padding: 10px 20px;
+    border-radius: 100px;
+    background: #eef1f7;
+
+    font-size: 16px;
+    color: rgba(125, 134, 156, 0.6);
+}
+
+/* ================= ADAPTIVE ================= */
+
+@media (max-width: 1024px) {
+    .header {
+        flex-direction: column;
+    }
+
+    .description {
+        max-width: 100%;
+    }
+
+    .card {
+        padding: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .title {
+        font-size: 32px;
+    }
+
+    .description {
+        font-size: 18px;
+    }
+
+    .card {
+        gap: 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    .section {
+        padding: 80px 0;
+    }
+
+    .title {
+        font-size: 26px;
+    }
+
+    .badge {
+        width: 100%;
+    }
+}
