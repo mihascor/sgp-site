@@ -41,37 +41,43 @@ export const HomeContacts = () => {
       <div className={styles.container}>
         <h2 className={styles.title}>Контакты</h2>
 
-        <div className={styles.top}>
-          <div className={styles.infoGroup}>
-            <p className={styles.label}>Телефон:</p>
-            <a href="tel:+78172239695" className={styles.phone}>
-              +7 (817) 223–96–95
-            </a>
+        <div className={styles.layout}>
+          <div className={styles.leftTop}>
+            <div className={styles.contactsRow}>
+              <div className={styles.infoGroup}>
+                <p className={styles.label}>Телефон:</p>
+                <a href="tel:+78172239695" className={styles.phone}>
+                  +7 (817) 223–96–95
+                </a>
+              </div>
+
+              <div className={styles.infoGroup}>
+                <p className={styles.label}>E-mail:</p>
+                <a href="mailto:post@issgp.ru" className={styles.email}>
+                  post@issgp.ru
+                </a>
+              </div>
+            </div>
+
+            <div className={styles.legalBlock}>
+              <p className={styles.label}>Юридический адрес:</p>
+              <p className={styles.legalAddress}>
+                160012, Вологодская обл., г. Вологда, ул. Козленская, д. 119а, оф. 308/9
+              </p>
+            </div>
           </div>
 
-          <div className={styles.infoGroup}>
-            <p className={styles.label}>E-mail:</p>
-            <a href="mailto:post@issgp.ru" className={styles.email}>
-              post@issgp.ru
-            </a>
+          <div className={styles.rightTop}>
+            <div className={styles.infoGroup}>
+              <p className={styles.label}>Местоположение:</p>
+              <p className={styles.location}>
+                Центральный офис
+                <br />
+                и обособленные подразделения
+              </p>
+            </div>
           </div>
 
-          <div className={styles.infoGroup}>
-            <p className={styles.label}>Местоположение:</p>
-            <p className={styles.location}>
-              Центральный офис и&nbsp;обособленные подразделения
-            </p>
-          </div>
-        </div>
-
-        <div className={styles.legalBlock}>
-          <p className={styles.label}>Юридический адрес:</p>
-          <p className={styles.legalAddress}>
-            160012, Вологодская обл., г. Вологда, ул. Козленская, д. 119а, оф. 308/9
-          </p>
-        </div>
-
-        <div className={styles.content}>
           <div className={styles.mapWrap}>
             <iframe
               className={styles.map}

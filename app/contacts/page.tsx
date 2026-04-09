@@ -1,3 +1,9 @@
-export default function ContactsPage() {
-    return <main>Контакты</main>
-  }
+import { HomeContacts } from "@/sections/home/home-contacts"
+
+export default function Page() {
+  return (
+    <>
+      <HomeContacts />
+    </>
+  )
+}

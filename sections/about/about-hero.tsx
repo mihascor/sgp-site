@@ -14,38 +14,39 @@ export const AboutHero = () => {
     <section className={styles.section}>
       <div className={styles.overlay} /> {/* затемнение */}
       <Container className={styles.container}>
-          <div className={styles.row}>
+        <div className={styles.row}>
 
-            {/* Текстовый блок */}
-            <div className={styles.text}>
-              <h1 className={styles.title}>СВЯЗЬГАЗПРОЕКТ</h1>
-              <p className={styles.description}>
-                Специализируемся на проектировании комплексов инженерно-технических
-                средств охраны для крупных и стратегически важных объектов
-              </p>
-            </div>
-
-            {/* Нижний блок */}
-            <div className={styles.bottom}>
-
-              {/* Chips */}
-              <div className={styles.chips}>
-                {directions.map((item) => (
-                  <Link key={item.href} href={item.href} className={styles.chip}>
-                    {item.title}
-                  </Link>
-                ))}
-              </div>
-
-              {/* Кнопка */}
-              <Link href="/contacts" className={styles.cta}>
-                <span className={styles.dot}></span>
-                <span>Бесплатная консультация</span>
-              </Link>
-
-            </div>
+          {/* Текстовый блок */}
+          <div className={styles.text}>
+            <h1 className={styles.title}>СВЯЗЬГАЗПРОЕКТ</h1>
+            <p className={styles.description}>
+              Специализируемся на проектировании <br />
+              комплексов инженерно-технических средств охраны <br />
+              для крупных и стратегически важных объектов
+            </p>
           </div>
-        
+
+          {/* Нижний блок */}
+          <div className={styles.bottom}>
+
+            {/* Chips */}
+            <div className={styles.chips}>
+              {directions.map((item) => (
+                <Link key={item.href} href={item.href} className={styles.chip}>
+                  {item.title}
+                </Link>
+              ))}
+            </div>
+
+            {/* Кнопка */}
+            <Link href="/contacts" className={styles.cta}>
+              <span className={styles.dot}></span>
+              <span>Бесплатная консультация</span>
+            </Link>
+
+          </div>
+        </div>
+
       </Container>
     </section>
   );

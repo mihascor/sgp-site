@@ -31,7 +31,9 @@ export const AboutReliability = () => {
                     <div className={styles.statCard}>
                         <div className={styles.statValueDark}>100%</div>
                         <div className={styles.statTextDark}>
-                            Выполнение обязательств <br /> в срок
+                            Выполнение <br />
+                            обязательств <br /> 
+                            в срок
                         </div>
                     </div>
                 </div>
@@ -67,7 +69,8 @@ export const AboutReliability = () => {
                         <div className={styles.smallCard}>
                             <div className={styles.smallTitle}>Берём на себя</div>
                             <div className={styles.smallText}>
-                                Полный цикл — от первых инженерных изысканий на местности до
+                                Полный цикл — <br />
+                                от первых инженерных изысканий на местности до
                                 авторского надзора за строительством.
                             </div>
                         </div>

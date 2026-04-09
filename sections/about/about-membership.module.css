@@ -14,7 +14,7 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    gap: 40px;
+    gap: 80px;
 }
 
 /* Левая часть */
@@ -68,7 +68,7 @@
 .cards {
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 60px;
 }
 
 /* Карточка */

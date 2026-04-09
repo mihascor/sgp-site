@@ -1,0 +1,302 @@
+
+/* Секция без собственного фона:
+   базовый фон страницы уже задан глобально */
+   .section {
+    padding: 64px 0 120px;
+  }
+  
+  .inner {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .breadcrumbs {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 48px;
+  
+    font-size: 14px;
+    line-height: 1.35;
+    color: #7d869c;
+  }
+  
+  .breadcrumbLink {
+    color: #7d869c;
+    text-decoration: none;
+    transition: color 0.2s ease;
+  }
+  
+  .breadcrumbSeparator,
+  .breadcrumbCurrent {
+    color: #7d869c;
+  }
+  
+  .title {
+    margin: 0 0 60px;
+  
+    font-weight: 600;
+    font-size: 60px;
+    line-height: 1.05;
+    letter-spacing: -0.04em;
+    text-transform: uppercase;
+    color: #0f1c42;
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+    width: 100%;
+  }
+  
+  .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 48px;
+    min-height: 375px;
+    padding: 40px 60px;
+  
+    background: #ffffff;
+    border-radius: 15px;
+  }
+  
+  .cardContent {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  
+  .cardTop {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px dashed rgba(125, 134, 156, 0.4);
+  }
+  
+  .lattice {
+    flex-shrink: 0;
+    width: 29px;
+    height: auto;
+  }
+  
+  .status {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+  }
+  
+  .statusWide {
+    min-width: 174px;
+    justify-content: flex-end;
+  }
+  
+  .statusText {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.35;
+    color: #032ca6;
+  }
+  
+  .statusIcon {
+    flex-shrink: 0;
+  }
+  
+  .info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .cardTitle {
+    margin: 0;
+  
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.35;
+    color: #0f1c42;
+  }
+  
+  .cardDescription {
+    margin: 0;
+  
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.35;
+    color: #7d869c;
+  }
+  
+  .cardNote {
+    margin: 0;
+  
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.35;
+    color: #7d869c;
+  }
+  
+  .actions {
+    display: flex;
+    align-items: stretch;
+    gap: 20px;
+    width: 100%;
+  }
+  
+  .actionButton {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    flex: 1 1 0;
+    min-height: 52px;
+    padding: 15px 20px;
+  
+    border-radius: 10px;
+    background: #eef1f7;
+    color: #7d869c;
+    text-decoration: none;
+  
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.35;
+    transition:
+      background-color 0.2s ease,
+      color 0.2s ease,
+      transform 0.2s ease;
+  }
+  
+  
+  .actionIcon {
+    flex-shrink: 0;
+  }
+  
+  /* Ховер только для десктопа */
+  @media (hover: hover) and (pointer: fine) {
+    .breadcrumbLink:hover {
+      color: #032ca6;
+    }
+  
+    .actionButton:hover {
+      background: #032ca6;
+      color: #ffffff;
+      transform: translateY(-1px);
+    }
+  }
+  
+  @media (max-width: 1024px) {
+    .section {
+      padding: 56px 0 96px;
+    }
+  
+    .title {
+      margin-bottom: 48px;
+      font-size: 48px;
+    }
+  
+    .card {
+      min-height: 340px;
+      padding: 32px;
+    }
+  
+    .actions {
+      gap: 16px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .section {
+      padding: 48px 0 88px;
+    }
+  
+    .breadcrumbs {
+      margin-bottom: 36px;
+    }
+  
+    .title {
+      margin-bottom: 40px;
+      font-size: 40px;
+    }
+  
+    .grid {
+      grid-template-columns: 1fr;
+    }
+  
+    .card {
+      min-height: auto;
+      gap: 36px;
+      padding: 28px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .section {
+      padding: 40px 0 72px;
+    }
+  
+    .breadcrumbs {
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-bottom: 28px;
+      font-size: 13px;
+    }
+  
+    .title {
+      margin-bottom: 32px;
+      font-size: 32px;
+      line-height: 1.05;
+    }
+  
+    .card {
+      gap: 28px;
+      padding: 24px 20px;
+      border-radius: 14px;
+    }
+  
+    .cardContent {
+      gap: 24px;
+    }
+  
+    .cardTop {
+      align-items: flex-start;
+      gap: 16px;
+    }
+  
+    .status,
+    .statusWide {
+      min-width: auto;
+      justify-content: flex-end;
+    }
+  
+    .statusText {
+      font-size: 14px;
+    }
+  
+    .cardTitle {
+      font-size: 18px;
+    }
+  
+    .cardDescription {
+      font-size: 15px;
+    }
+  
+    .cardNote {
+      font-size: 13px;
+    }
+  
+    .actions {
+      flex-direction: column;
+      gap: 12px;
+    }
+  
+    .actionButton {
+      width: 100%;
+      min-height: 48px;
+      padding: 14px 18px;
+      font-size: 15px;
+    }
+  }
