@@ -11,8 +11,8 @@ type Props = {
 export const ConsultationSection = ({ title, description }: Props) => {
   return (
     <section className={styles.section}>
-      <Container>
-        <div className={styles.card}>
+      <div className={styles.card}>
+        <Container>
           <div className={styles.content}>
             <div className={styles.textBlock}>
               <h2 className={styles.title}>{title}</h2>
@@ -44,8 +44,8 @@ export const ConsultationSection = ({ title, description }: Props) => {
               </Link>
             </div>
           </div>
-        </div>
-      </Container>
+        </Container>
+      </div>
     </section>
   );
 };

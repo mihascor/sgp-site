@@ -13,7 +13,7 @@
   align-items: center;
   justify-content: space-between;
   gap: 32px;
-  padding-left: 40px;
+  padding-left: 0px;
 }
 
 .left {
@@ -71,7 +71,9 @@
   line-height: 135%;
   color: #0f1c42;
 
-  transition: color 0.2s ease, opacity 0.2s ease;
+  transition:
+    color 0.2s ease,
+    opacity 0.2s ease;
 }
 
 .navButton:hover,
@@ -170,7 +172,10 @@
   width: 28px;
   height: 2px;
   background: #0f1c42;
-  transition: transform 0.2s ease, opacity 0.2s ease, top 0.2s ease;
+  transition:
+    transform 0.2s ease,
+    opacity 0.2s ease,
+    top 0.2s ease;
 }
 
 .burger span:nth-child(1) {
