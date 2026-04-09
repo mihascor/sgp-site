@@ -1,0 +1,268 @@
+.section {
+  position: relative;
+  min-height: 800px;
+  padding: 0;
+  overflow: hidden;
+}
+
+/* Основной фон секции по Figma */
+.background {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  border-radius: 100px;
+  background: radial-gradient(
+    84.99% 97.77% at 38.04% 2.23%,
+    #eef1f7 0%,
+    #c3d1ed 100%
+  );
+  transform: scaleY(-1);
+}
+
+/* Главная сетка секции */
+.layout {
+  position: relative;
+  z-index: 1;
+  min-height: 800px;
+
+  display: grid;
+  grid-template-columns: minmax(0, 680px) 472px;
+  justify-content: space-between;
+  align-items: start;
+  column-gap: 40px;
+}
+
+/* Левая колонка отдельно опускается вниз,
+   чтобы правая карточка оставалась прижатой к верху */
+.content {
+  padding-top: 106px;
+  max-width: 680px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 61px;
+}
+
+/* Заголовочный блок */
+.titleBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.title {
+  margin: 0;
+  max-width: 680px;
+
+  font-weight: 600;
+  font-size: 60px;
+  line-height: 105%;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+  color: #0f1c42;
+}
+
+.subtitle {
+  margin: 0;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 135%;
+  color: #0f1c42;
+}
+
+/* Реквизиты */
+.infoList {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.infoList p {
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 135%;
+  color: #0f1c42;
+}
+
+/* Правая карточка */
+.card {
+  width: 100%;
+  min-height: 575px;
+  padding: 72px 32px 40px;
+
+  background: #ffffff;
+  border-radius: 0 0 50px 50px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 46px;
+}
+
+/* Синий круг */
+.icon {
+  position: relative;
+  width: 190px;
+  height: 190px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  background: #032ca6;
+  overflow: hidden;
+}
+
+/* SVG внутри круга */
+.iconImage {
+  object-fit: contain;
+  padding: 0px;
+}
+
+/* Текст внутри карточки */
+.cardText {
+  width: 295px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  text-align: center;
+}
+
+.cardTitle {
+  margin: 0;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 110%;
+  color: #0f1c42;
+}
+
+.cardDescription {
+  margin: 0;
+  width: 295px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 135%;
+  color: #0f1c42;
+}
+
+/* 1024 */
+@media (max-width: 1024px) {
+  .section {
+    min-height: auto;
+  }
+
+  .layout {
+    min-height: auto;
+    grid-template-columns: 1fr;
+    row-gap: 40px;
+    justify-items: center;
+    padding: 80px 0;
+  }
+
+  .content {
+    padding-top: 0;
+    gap: 40px;
+    max-width: 680px;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+  }
+
+  .infoList {
+    align-items: center;
+  }
+
+  .card {
+    max-width: 472px;
+  }
+}
+
+/* 768 */
+@media (max-width: 768px) {
+  .background {
+    border-radius: 60px;
+  }
+
+  .layout {
+    padding: 64px 0;
+  }
+
+  .title {
+    font-size: 44px;
+  }
+
+  .subtitle {
+    font-size: 24px;
+  }
+
+  .card {
+    padding: 56px 24px 32px;
+    min-height: auto;
+  }
+
+  .icon {
+    width: 170px;
+    height: 170px;
+  }
+
+  .iconImage {
+    padding: 32px;
+  }
+}
+
+/* 480 */
+@media (max-width: 480px) {
+  .background {
+    border-radius: 36px;
+  }
+
+  .layout {
+    padding: 48px 0;
+    row-gap: 32px;
+  }
+
+  .content {
+    gap: 32px;
+  }
+
+  .title {
+    font-size: 32px;
+  }
+
+  .subtitle {
+    font-size: 20px;
+  }
+
+  .infoList p {
+    font-size: 14px;
+  }
+
+  .card {
+    padding: 40px 20px 28px;
+    border-radius: 0 0 32px 32px;
+    gap: 32px;
+  }
+
+  .icon {
+    width: 140px;
+    height: 140px;
+  }
+
+  .iconImage {
+    padding: 24px;
+  }
+
+  .cardText {
+    width: 100%;
+    gap: 16px;
+  }
+
+  .cardTitle {
+    font-size: 20px;
+  }
+
+  .cardDescription {
+    width: 100%;
+    font-size: 14px;
+  }
+}

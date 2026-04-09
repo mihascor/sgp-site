@@ -1,0 +1,144 @@
+.section {
+  padding-bottom: 120px;
+}
+
+.card {
+  background: #ffffff;
+  border-radius: 100px 100px 0 0;
+  overflow: hidden;
+}
+
+.content {
+  min-height: 478px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  padding: 80px 116px;
+}
+
+.textBlock {
+  max-width: 570px;
+}
+
+.title {
+  margin: 0;
+  color: #0f1c42;
+  font-weight: 600;
+  font-size: 45px;
+  line-height: 105%;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+}
+
+.description {
+  margin: 40px 0 0;
+  max-width: 446px;
+  color: #0f1c42;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 135%;
+  letter-spacing: -0.04em;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.button {
+  min-width: 275px;
+  height: 52px;
+  padding: 15px 20px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  border-radius: 10px;
+  background: #032ca6;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 135%;
+  transition:
+    background-color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.button:hover {
+  background: #0a38c0;
+}
+
+.button:active {
+  transform: translateY(1px);
+}
+
+@media (max-width: 1199px) {
+  .card {
+    border-radius: 72px 72px 0 0;
+  }
+
+  .content {
+    min-height: auto;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 72px 56px;
+  }
+
+  .textBlock {
+    max-width: 100%;
+  }
+
+  .title {
+    font-size: 38px;
+  }
+
+  .description {
+    max-width: 100%;
+    margin-top: 32px;
+    font-size: 22px;
+  }
+
+  .actions {
+    width: 100%;
+  }
+}
+
+@media (max-width: 767px) {
+  .section {
+    padding-bottom: 80px;
+  }
+
+  .card {
+    border-radius: 40px 40px 0 0;
+  }
+
+  .content {
+    gap: 32px;
+    padding: 48px 24px;
+  }
+
+  .title {
+    font-size: 28px;
+  }
+
+  .description {
+    margin-top: 24px;
+    font-size: 18px;
+  }
+
+  .actions {
+    width: 100%;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 12px;
+  }
+
+  .button {
+    width: 100%;
+    min-width: 100%;
+  }
+}
