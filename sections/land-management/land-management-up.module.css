@@ -1,0 +1,128 @@
+.section {
+  padding: 60px 0 118px;
+}
+
+/* Хлебные крошки */
+.breadcrumbs {
+  font-size: 14px;
+  color: #7d869c;
+  margin-bottom: 75px;
+}
+
+/* Заголовок + описание */
+.header {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  max-width: 780px;
+  margin-bottom: 120px;
+}
+
+.title {
+  font-size: 45px;
+  font-weight: 600;
+  line-height: 105%;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+  color: #0f1c42;
+}
+
+.description {
+  font-size: 22px;
+  line-height: 135%;
+  color: #0f1c42;
+}
+
+/* Подзаголовок */
+.subTitle {
+  font-size: 30px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 60px;
+  color: #0f1c42;
+}
+
+/* Контейнер групп */
+.groups {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+/* Группа */
+.group {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Синяя шапка */
+.groupHeader {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 20px 40px;
+  background: #032ca6;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  border-radius: 15px 15px 0 0;
+}
+
+/* Список */
+.items {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Элемент списка */
+.item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 20px 40px;
+  background: #ffffff;
+  border-bottom: 1px solid #eef1f7;
+}
+
+.item span {
+  font-size: 20px;
+  line-height: 135%;
+  color: #0f1c42;
+  margin-left: 20px;
+}
+
+/* Адаптив */
+@media (max-width: 1024px) {
+  .title {
+    font-size: 36px;
+  }
+
+  .description {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding: 60px 0;
+  }
+
+  .groupHeader,
+  .item {
+    padding: 16px 20px;
+  }
+
+  .item span {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 28px;
+  }
+
+  .subTitle {
+    font-size: 22px;
+  }
+}

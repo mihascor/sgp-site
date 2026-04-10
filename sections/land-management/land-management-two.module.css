@@ -1,0 +1,289 @@
+.section {
+  padding: 0px 0 120px;
+}
+
+.panel {
+  position: relative;
+  overflow: hidden;
+  padding: 78px 174px 80px;
+  border-radius: 100px;
+  background: radial-gradient(
+    84.99% 97.77% at 38.04% 2.23%,
+    #eef1f7 0%,
+    #c3d1ed 100%
+  );
+}
+
+/* Декоративная внутренняя рамка */
+.outline {
+  position: absolute;
+  inset: 0;
+  border: 1px solid #1f8fff;
+  border-radius: 100px;
+  pointer-events: none;
+}
+
+.header {
+  position: relative;
+  z-index: 1;
+  margin-bottom: 56px;
+}
+
+.title {
+  display: inline-flex;
+  flex-direction: column;
+  gap: 0;
+  margin: 0;
+  color: #0f1c42;
+  font-size: 45px;
+  font-weight: 600;
+  line-height: 1.05;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+}
+
+.title span {
+  display: block;
+}
+
+.grid {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 373px));
+  grid-template-areas:
+    "card1 image1 card2"
+    "image2 card3 card4";
+  gap: 20px;
+  align-items: stretch;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 20px;
+  min-height: 285px;
+  padding: 40px;
+  border: 1px solid #1f8fff;
+  border-radius: 10px;
+  background: #ffffff;
+}
+
+.cardShort {
+  min-height: 258px;
+}
+
+.card:nth-child(1) {
+  grid-area: card1;
+}
+
+.card:nth-child(3) {
+  grid-area: card2;
+}
+
+.card:nth-child(5) {
+  grid-area: card3;
+}
+
+.card:nth-child(6) {
+  grid-area: card4;
+}
+
+.iconWrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 999px;
+  background: #c3d2fe;
+  flex-shrink: 0;
+}
+
+.cardContent {
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+}
+
+.cardTitle {
+  margin: 0;
+  color: #0f1c42;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.35;
+}
+
+.cardText {
+  margin: 0;
+  color: #0f1c42;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.35;
+}
+
+.imageCard {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid #1f8fff;
+  border-radius: 10px;
+  min-height: 258px;
+}
+
+.imageCardTop {
+  grid-area: image1;
+  min-height: 285px;
+}
+
+.imageCardBottom {
+  grid-area: image2;
+  min-height: 258px;
+}
+
+.image {
+  object-fit: cover;
+}
+
+/* Адаптив 1024px */
+@media (max-width: 1024px) {
+  .section {
+    padding: 72px 0 100px;
+  }
+
+  .panel {
+    padding: 64px 48px;
+    border-radius: 60px;
+  }
+
+  .outline {
+    border-radius: 60px;
+  }
+
+  .header {
+    margin-bottom: 40px;
+  }
+
+  .title {
+    font-size: 38px;
+  }
+
+  .grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-areas:
+      "card1 image1"
+      "card2 image2"
+      "card3 card4";
+  }
+
+  .card,
+  .cardShort,
+  .imageCard,
+  .imageCardTop,
+  .imageCardBottom {
+    min-height: 260px;
+  }
+}
+
+/* Адаптив 768px */
+@media (max-width: 768px) {
+  .section {
+    padding: 64px 0 88px;
+  }
+
+  .panel {
+    padding: 40px 24px;
+    border-radius: 36px;
+  }
+
+  .outline {
+    border-radius: 36px;
+  }
+
+  .header {
+    margin-bottom: 32px;
+  }
+
+  .title {
+    font-size: 30px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "card1"
+      "image1"
+      "card2"
+      "image2"
+      "card3"
+      "card4";
+  }
+
+  .card,
+  .cardShort {
+    min-height: auto;
+    padding: 32px 24px;
+  }
+
+  .imageCard,
+  .imageCardTop,
+  .imageCardBottom {
+    min-height: 240px;
+  }
+
+  .cardTitle,
+  .cardText {
+    font-size: 18px;
+  }
+}
+
+/* Адаптив 480px */
+@media (max-width: 480px) {
+  .section {
+    padding: 48px 0 72px;
+  }
+
+  .panel {
+    padding: 32px 16px;
+    border-radius: 24px;
+  }
+
+  .outline {
+    border-radius: 24px;
+  }
+
+  .title {
+    font-size: 24px;
+    line-height: 1.08;
+  }
+
+  .grid {
+    gap: 16px;
+  }
+
+  .card,
+  .cardShort {
+    gap: 18px;
+    padding: 24px 18px;
+  }
+
+  .cardContent {
+    gap: 14px;
+  }
+
+  .iconWrap {
+    width: 52px;
+    height: 52px;
+  }
+
+  .cardTitle,
+  .cardText {
+    font-size: 16px;
+  }
+
+  .imageCard,
+  .imageCardTop,
+  .imageCardBottom {
+    min-height: 210px;
+  }
+}
