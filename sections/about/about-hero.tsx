@@ -9,13 +9,12 @@ const directions = [
   { title: "Авторский надзор", href: "/supervision" },
 ];
 
-export const AboutHero = () => {
+export function AboutHero() {
   return (
     <section className={styles.section}>
       <div className={styles.overlay} /> {/* затемнение */}
       <Container className={styles.container}>
         <div className={styles.row}>
-
           {/* Текстовый блок */}
           <div className={styles.text}>
             <h1 className={styles.title}>СВЯЗЬГАЗПРОЕКТ</h1>
@@ -28,7 +27,6 @@ export const AboutHero = () => {
 
           {/* Нижний блок */}
           <div className={styles.bottom}>
-
             {/* Chips */}
             <div className={styles.chips}>
               {directions.map((item) => (
@@ -43,11 +41,9 @@ export const AboutHero = () => {
               <span className={styles.dot}></span>
               <span>Бесплатная консультация</span>
             </Link>
-
           </div>
         </div>
-
       </Container>
     </section>
   );
-};
+}

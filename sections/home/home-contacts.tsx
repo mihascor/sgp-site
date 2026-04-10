@@ -1,4 +1,4 @@
-import styles from "./home-contacts.module.css"
+import styles from "./home-contacts.module.css";
 
 const offices = [
   {
@@ -33,9 +33,9 @@ const offices = [
     city: "Казань",
     address: "пр-кт Победы, д. 173, оф. 114",
   },
-]
+];
 
-export const HomeContacts = () => {
+export function HomeContacts() {
   return (
     <section className={styles.section}>
       <div className={styles.container}>
@@ -62,7 +62,8 @@ export const HomeContacts = () => {
             <div className={styles.legalBlock}>
               <p className={styles.label}>Юридический адрес:</p>
               <p className={styles.legalAddress}>
-                160012, Вологодская обл., г. Вологда, ул. Козленская, д. 119а, оф. 308/9
+                160012, Вологодская обл., г. Вологда, ул. Козленская, д. 119а,
+                оф. 308/9
               </p>
             </div>
           </div>
@@ -72,8 +73,7 @@ export const HomeContacts = () => {
               <p className={styles.label}>Местоположение:</p>
               <p className={styles.location}>
                 Центральный офис
-                <br />
-                и обособленные подразделения
+                <br />и обособленные подразделения
               </p>
             </div>
           </div>
@@ -104,5 +104,5 @@ export const HomeContacts = () => {
         </div>
       </div>
     </section>
-  )
+  );
 }

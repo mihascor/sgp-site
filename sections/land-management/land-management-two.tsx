@@ -28,11 +28,8 @@ const competencyCards = [
 export function LandManagementTwo() {
   return (
     <section className={styles.section}>
-      <Container>
-        <div className={styles.panel}>
-          {/* Декоративная рамка блока */}
-          <div className={styles.outline} aria-hidden="true" />
-
+      <div className={styles.panel}>
+        <Container>
           {/* Заголовок секции */}
           <div className={styles.header}>
             <h2 className={styles.title}>
@@ -133,8 +130,8 @@ export function LandManagementTwo() {
               </div>
             </article>
           </div>
-        </div>
-      </Container>
+        </Container>
+      </div>
     </section>
   );
 }

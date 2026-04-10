@@ -2,7 +2,7 @@ import Image from "next/image";
 import styles from "./documents-info.module.css";
 import { Container } from "@/components/shared/container/Container";
 
-export const DocumentsInfo = () => {
+export function DocumentsInfo() {
   return (
     <section className={styles.section}>
       {/* Отдельный декоративный фон секции */}
@@ -52,4 +52,4 @@ export const DocumentsInfo = () => {
       </Container>
     </section>
   );
-};
+}

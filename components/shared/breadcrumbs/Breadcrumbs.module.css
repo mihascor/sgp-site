@@ -1,0 +1,46 @@
+.breadcrumbs {
+  margin-bottom: 75px;
+}
+
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.item {
+  display: inline-flex;
+  align-items: center;
+}
+
+.link,
+.text,
+.current,
+.separator {
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 135%;
+}
+
+.link,
+.text,
+.separator {
+  color: #7d869c;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.current {
+  color: #16255b;
+}
+
+.separator {
+  margin: 0 10px;
+}

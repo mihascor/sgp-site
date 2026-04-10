@@ -1,7 +1,7 @@
-import { Container } from "@/components/shared/container/Container"
-import styles from "./home-hero.module.css"
+import { Container } from "@/components/shared/container/Container";
+import styles from "./home-hero.module.css";
 
-export const HomeHero = () => {
+export function HomeHero() {
   return (
     <section className={styles.hero}>
       <div className={styles.overlay} />
@@ -14,15 +14,14 @@ export const HomeHero = () => {
 
               <h1 className={styles.title}>
                 Проектирование
-                <br />
-                и изыскательские работы
+                <br />и изыскательские работы
               </h1>
             </div>
 
             <p className={styles.description}>
               Специализируемся на проектировании комплексов
-              инженерно-технических средств охраны для крупных
-              и стратегически важных объектов
+              инженерно-технических средств охраны для крупных и стратегически
+              важных объектов
             </p>
           </div>
 
@@ -33,5 +32,5 @@ export const HomeHero = () => {
         </div>
       </Container>
     </section>
-  )
+  );
 }

@@ -8,7 +8,7 @@ type Props = {
   description: React.ReactNode;
 };
 
-export const ConsultationSection = ({ title, description }: Props) => {
+export function ConsultationSection({ title, description }: Props) {
   return (
     <section className={styles.section}>
       <div className={styles.card}>
@@ -48,4 +48,4 @@ export const ConsultationSection = ({ title, description }: Props) => {
       </div>
     </section>
   );
-};
+}

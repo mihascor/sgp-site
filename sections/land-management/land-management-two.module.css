@@ -1,32 +1,23 @@
 .section {
-  padding: 0px 0 120px;
+  padding: 0px 0 0px;
 }
 
 .panel {
   position: relative;
   overflow: hidden;
-  padding: 78px 174px 80px;
+  padding: 120px 0 120px;
   border-radius: 100px;
   background: radial-gradient(
-    84.99% 97.77% at 38.04% 2.23%,
+    84.99% 97.77% at 38.04% 97.77%,
     #eef1f7 0%,
     #c3d1ed 100%
   );
 }
 
-/* Декоративная внутренняя рамка */
-.outline {
-  position: absolute;
-  inset: 0;
-  border: 1px solid #1f8fff;
-  border-radius: 100px;
-  pointer-events: none;
-}
-
 .header {
   position: relative;
   z-index: 1;
-  margin-bottom: 56px;
+  margin-bottom: 80px;
 }
 
 .title {
@@ -50,7 +41,7 @@
   position: relative;
   z-index: 1;
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 373px));
+  grid-template-columns: repeat(3, 1fr);
   grid-template-areas:
     "card1 image1 card2"
     "image2 card3 card4";
@@ -65,7 +56,7 @@
   gap: 20px;
   min-height: 285px;
   padding: 40px;
-  border: 1px solid #1f8fff;
+  border: none;
   border-radius: 10px;
   background: #ffffff;
 }
@@ -126,7 +117,7 @@
 .imageCard {
   position: relative;
   overflow: hidden;
-  border: 1px solid #1f8fff;
+  border: none;
   border-radius: 10px;
   min-height: 258px;
 }

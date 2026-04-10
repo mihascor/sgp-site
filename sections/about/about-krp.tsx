@@ -37,7 +37,7 @@ const items = [
 ];
 
 // Комплексная реализация проекта
-export const AboutKrp = () => {
+export function AboutKrp() {
   return (
     <section className={styles.section}>
       {/* Белый фон секции вынесен на всю ширину браузера */}
@@ -96,4 +96,4 @@ export const AboutKrp = () => {
       </div>
     </section>
   );
-};
+}

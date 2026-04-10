@@ -1,12 +1,14 @@
 import { ConsultationSection } from "@/components/shared/consultation-section/ConsultationSection";
 import { LandManagementUp } from "@/sections/land-management/land-management-up";
 import { LandManagementTwo } from "@/sections/land-management/land-management-two";
+import { LandManagementThree } from "@/sections/land-management/land-management-three";
 
 export default function Page() {
   return (
     <>
       <LandManagementUp />
       <LandManagementTwo />
+      <LandManagementThree />
       <ConsultationSection
         title={
           <>

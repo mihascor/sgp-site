@@ -2,13 +2,6 @@
   padding: 60px 0 118px;
 }
 
-/* Хлебные крошки */
-.breadcrumbs {
-  font-size: 14px;
-  color: #7d869c;
-  margin-bottom: 75px;
-}
-
 /* Заголовок + описание */
 .header {
   display: flex;

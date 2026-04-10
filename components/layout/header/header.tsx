@@ -1,89 +1,93 @@
-"use client"
+"use client";
 
-import { useEffect, useRef, useState } from "react"
-import Image from "next/image"
-import Link from "next/link"
-import { Container } from "@/components/shared/container/Container"
-import styles from "./header.module.css"
+import { useEffect, useRef, useState } from "react";
+import Image from "next/image";
+import Link from "next/link";
+import { Container } from "@/components/shared/container/Container";
+import styles from "./header.module.css";
 
-type MenuKey = "company" | "activity" | null
+type MenuKey = "company" | "activity" | null;
 
 const companyLinks = [
   { label: "О нас", href: "/about" },
   { label: "Заказчики", href: "/clients" },
   { label: "Документы", href: "/documents" },
-]
+];
 
 const activityLinks = [
   { label: "Землеустроительные работы", href: "/land-management" },
   { label: "Комплексные инженерные изыскания", href: "/engineering-surveys" },
   { label: "Проектирование ИТСО", href: "/design" },
   { label: "Авторский надзор", href: "/supervision" },
-]
+];
 
-export const Header = () => {
-  const [openDesktopMenu, setOpenDesktopMenu] = useState<MenuKey>(null)
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
-  const [openMobileSubmenu, setOpenMobileSubmenu] = useState<MenuKey>(null)
+export function Header() {
+  const [openDesktopMenu, setOpenDesktopMenu] = useState<MenuKey>(null);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [openMobileSubmenu, setOpenMobileSubmenu] = useState<MenuKey>(null);
 
-  const headerRef = useRef<HTMLElement | null>(null)
+  const headerRef = useRef<HTMLElement | null>(null);
 
   const toggleDesktopMenu = (menu: Exclude<MenuKey, null>) => {
-    setOpenDesktopMenu((prev) => (prev === menu ? null : menu))
-  }
+    setOpenDesktopMenu((prev) => (prev === menu ? null : menu));
+  };
 
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen((prev) => {
-      const next = !prev
+      const next = !prev;
 
       if (!next) {
-        setOpenMobileSubmenu(null)
+        setOpenMobileSubmenu(null);
       }
 
-      return next
-    })
-  }
+      return next;
+    });
+  };
 
   const toggleMobileSubmenu = (menu: Exclude<MenuKey, null>) => {
-    setOpenMobileSubmenu((prev) => (prev === menu ? null : menu))
-  }
+    setOpenMobileSubmenu((prev) => (prev === menu ? null : menu));
+  };
 
   const closeAllMenus = () => {
-    setOpenDesktopMenu(null)
-    setIsMobileMenuOpen(false)
-    setOpenMobileSubmenu(null)
-  }
+    setOpenDesktopMenu(null);
+    setIsMobileMenuOpen(false);
+    setOpenMobileSubmenu(null);
+  };
 
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
-      if (!headerRef.current) return
+      if (!headerRef.current) return;
 
       if (!headerRef.current.contains(event.target as Node)) {
-        closeAllMenus()
+        closeAllMenus();
       }
-    }
+    };
 
     const handleEscape = (event: KeyboardEvent) => {
       if (event.key === "Escape") {
-        closeAllMenus()
+        closeAllMenus();
       }
-    }
+    };
 
-    document.addEventListener("mousedown", handleClickOutside)
-    document.addEventListener("keydown", handleEscape)
+    document.addEventListener("mousedown", handleClickOutside);
+    document.addEventListener("keydown", handleEscape);
 
     return () => {
-      document.removeEventListener("mousedown", handleClickOutside)
-      document.removeEventListener("keydown", handleEscape)
-    }
-  }, [])
+      document.removeEventListener("mousedown", handleClickOutside);
+      document.removeEventListener("keydown", handleEscape);
+    };
+  }, []);
 
   return (
     <header className={styles.header} ref={headerRef}>
       <Container>
         <div className={styles.inner}>
           <div className={styles.left}>
-            <Link href="/" className={styles.logoLink} aria-label="Перейти на главную">
+            <Link
+              href="/"
+              className={styles.logoLink}
+              aria-label="Перейти на главную"
+            >
               <Image
                 src="/logo.png"
                 alt="Связьгазпроект"
@@ -98,16 +102,18 @@ export const Header = () => {
               <div className={styles.navItem}>
                 <button
                   type="button"
-                  className={`${styles.navButton} ${openDesktopMenu === "company" ? styles.navButtonActive : ""
-                    }`}
+                  className={`${styles.navButton} ${
+                    openDesktopMenu === "company" ? styles.navButtonActive : ""
+                  }`}
                   onClick={() => toggleDesktopMenu("company")}
                   aria-expanded={openDesktopMenu === "company"}
                   aria-controls="desktop-company-menu"
                 >
                   Компания
                   <span
-                    className={`${styles.arrow} ${openDesktopMenu === "company" ? styles.arrowOpen : ""
-                      }`}
+                    className={`${styles.arrow} ${
+                      openDesktopMenu === "company" ? styles.arrowOpen : ""
+                    }`}
                   />
                 </button>
 
@@ -134,16 +140,18 @@ export const Header = () => {
               <div className={styles.navItem}>
                 <button
                   type="button"
-                  className={`${styles.navButton} ${openDesktopMenu === "activity" ? styles.navButtonActive : ""
-                    }`}
+                  className={`${styles.navButton} ${
+                    openDesktopMenu === "activity" ? styles.navButtonActive : ""
+                  }`}
                   onClick={() => toggleDesktopMenu("activity")}
                   aria-expanded={openDesktopMenu === "activity"}
                   aria-controls="desktop-activity-menu"
                 >
                   Деятельность
                   <span
-                    className={`${styles.arrow} ${openDesktopMenu === "activity" ? styles.arrowOpen : ""
-                      }`}
+                    className={`${styles.arrow} ${
+                      openDesktopMenu === "activity" ? styles.arrowOpen : ""
+                    }`}
                   />
                 </button>
 
@@ -209,8 +217,9 @@ export const Header = () => {
                 >
                   <span>Компания</span>
                   <span
-                    className={`${styles.arrow} ${openMobileSubmenu === "company" ? styles.arrowOpen : ""
-                      }`}
+                    className={`${styles.arrow} ${
+                      openMobileSubmenu === "company" ? styles.arrowOpen : ""
+                    }`}
                   />
                 </button>
 
@@ -239,8 +248,9 @@ export const Header = () => {
                 >
                   <span>Деятельность</span>
                   <span
-                    className={`${styles.arrow} ${openMobileSubmenu === "activity" ? styles.arrowOpen : ""
-                      }`}
+                    className={`${styles.arrow} ${
+                      openMobileSubmenu === "activity" ? styles.arrowOpen : ""
+                    }`}
                   />
                 </button>
 
@@ -260,11 +270,19 @@ export const Header = () => {
                 )}
               </div>
 
-              <Link href="/projects" className={styles.mobileLink} onClick={closeAllMenus}>
+              <Link
+                href="/projects"
+                className={styles.mobileLink}
+                onClick={closeAllMenus}
+              >
                 Реализованные проекты
               </Link>
 
-              <Link href="/contacts" className={styles.mobileLink} onClick={closeAllMenus}>
+              <Link
+                href="/contacts"
+                className={styles.mobileLink}
+                onClick={closeAllMenus}
+              >
                 Контакты
               </Link>
 
@@ -276,5 +294,5 @@ export const Header = () => {
         )}
       </Container>
     </header>
-  )
+  );
 }

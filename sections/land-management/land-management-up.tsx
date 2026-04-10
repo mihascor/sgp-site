@@ -1,15 +1,20 @@
 import Image from "next/image";
 import styles from "./land-management-up.module.css";
 import { Container } from "@/components/shared/container/Container";
+import { Breadcrumbs } from "@/components/shared/breadcrumbs/Breadcrumbs";
 
-export const LandManagementUp = () => {
+export function LandManagementUp() {
   return (
     <section className={styles.section}>
       <Container>
         {/* Хлебные крошки */}
-        <div className={styles.breadcrumbs}>
-          Главная / Деятельность / Землеустроительные работы
-        </div>
+        <Breadcrumbs
+          items={[
+            { label: "Главная", href: "/" },
+            { label: "Деятельность" },
+            { label: "Землеустроительные работы" },
+          ]}
+        />
 
         {/* Заголовок и описание */}
         <div className={styles.header}>
@@ -326,4 +331,4 @@ export const LandManagementUp = () => {
       </Container>
     </section>
   );
-};
+}
