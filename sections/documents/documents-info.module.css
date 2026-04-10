@@ -1,7 +1,7 @@
 .section {
   position: relative;
   min-height: 800px;
-  padding: 0;
+  padding: 0 0 120px;
   overflow: hidden;
 }
 
@@ -17,6 +17,7 @@
     #c3d1ed 100%
   );
   transform: scaleY(-1);
+  margin-bottom: 120px;
 }
 
 /* Главная сетка секции */

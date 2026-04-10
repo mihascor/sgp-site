@@ -1,19 +1,19 @@
-
-import Image from "next/image"
-import Link from "next/link"
-import { Container } from "@/components/shared/container/Container"
-import styles from "./documents-dl.module.css"
+import Image from "next/image";
+import Link from "next/link";
+import { Container } from "@/components/shared/container/Container";
+import styles from "./documents-dl.module.css";
+import { Breadcrumbs } from "@/components/shared/breadcrumbs/Breadcrumbs";
 
 type DocumentItem = {
-  id: number
-  title: string
-  description: string
-  status: string
-  href: string
-  note?: string
-  statusWide?: boolean
-  isPrimaryView?: boolean
-}
+  id: number;
+  title: string;
+  description: string;
+  status: string;
+  href: string;
+  note?: string;
+  statusWide?: boolean;
+  isPrimaryView?: boolean;
+};
 
 const documents: DocumentItem[] = [
   {
@@ -74,7 +74,7 @@ const documents: DocumentItem[] = [
     status: "Активно",
     href: "/documents/svidetelstvo_soyuz_stroiteley_voronezhskoy_oblasti.pdf",
   },
-]
+];
 
 export function DocumentsDl() {
   return (
@@ -82,19 +82,14 @@ export function DocumentsDl() {
       <Container>
         <div className={styles.inner}>
           {/* Хлебные крошки */}
-          <nav className={styles.breadcrumbs} aria-label="Навигация">
-            <Link href="/" className={styles.breadcrumbLink}>
-              Главная
-            </Link>
-            <span className={styles.breadcrumbSeparator}>/</span>
-            <span className={styles.breadcrumbCurrent}>Документы</span>
-          </nav>
+          <Breadcrumbs
+            items={[{ label: "Главная", href: "/" }, { label: "Документы" }]}
+          />
 
           {/* Заголовок секции */}
           <h1 id="documents-dl-title" className={styles.title}>
             ДОКУМЕНТЫ
-            <br />
-            И ЛИЦЕНЗИИ
+            <br />И ЛИЦЕНЗИИ
           </h1>
 
           {/* Сетка карточек документов */}
@@ -118,7 +113,9 @@ export function DocumentsDl() {
                         document.statusWide ? styles.statusWide : ""
                       }`}
                     >
-                      <span className={styles.statusText}>{document.status}</span>
+                      <span className={styles.statusText}>
+                        {document.status}
+                      </span>
                       <Image
                         src="/element/documents/documents-dl-jackdaw.svg"
                         alt=""
@@ -133,7 +130,9 @@ export function DocumentsDl() {
                   {/* Текстовый контент карточки */}
                   <div className={styles.info}>
                     <h2 className={styles.cardTitle}>{document.title}</h2>
-                    <p className={styles.cardDescription}>{document.description}</p>
+                    <p className={styles.cardDescription}>
+                      {document.description}
+                    </p>
 
                     {document.note && (
                       <p className={styles.cardNote}>{document.note}</p>
@@ -184,5 +183,5 @@ export function DocumentsDl() {
         </div>
       </Container>
     </section>
-  )
+  );
 }

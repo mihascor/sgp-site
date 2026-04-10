@@ -2,217 +2,213 @@
    HERO SECTION (главный экран)
    ========================= */
 
-   .hero {
-    position: relative; /* чтобы overlay позиционировался внутри секции */
-    height: 540px; /* высота hero из макета */
-    background-image: url("/home-hero.webp"); /* фоновое изображение */
-    background-size: cover; /* картинка покрывает весь блок */
-    background-position: center; /* центрируем фон */
-    color: #ffffff; /* базовый цвет текста */
-  }
-  
-  
-  /* =========================
+.hero {
+  position: relative; /* чтобы overlay позиционировался внутри секции */
+  height: 540px; /* высота hero из макета */
+  background-image: url("/home-hero.webp"); /* фоновое изображение */
+  background-size: cover; /* картинка покрывает весь блок */
+  background-position: center; /* центрируем фон */
+  color: #ffffff; /* базовый цвет текста */
+  margin-bottom: 120px;
+}
+
+/* =========================
      OVERLAY (затемнение)
      ========================= */
-  
-  .overlay {
-    position: absolute; /* растягиваем поверх hero */
-    inset: 0; /* top/right/bottom/left = 0 */
-    background: rgba(0, 0, 0, 0.4); /* затемнение поверх картинки */
-  }
-  
-  
-  /* =========================
+
+.overlay {
+  position: absolute; /* растягиваем поверх hero */
+  inset: 0; /* top/right/bottom/left = 0 */
+  background: rgba(0, 0, 0, 0.4); /* затемнение поверх картинки */
+}
+
+/* =========================
      LAYOUT (общая раскладка)
      ========================= */
-  
-  .row {
-    position: relative; /* чтобы контент был выше overlay */
-    z-index: 1;
-    display: flex; /* текст слева, кнопка справа */
-    justify-content: space-between; /* раздвигаем по краям */
-    align-items: flex-end; /* кнопка выравнивается по низу */
-    padding-top: 90px; /* отступ сверху внутри hero */
-    padding-bottom: 60px ;
-  }
-  
-  .content {
-    width: 675px; /* ширина текстового блока по макету */
-    display: flex;
-    flex-direction: column; /* элементы идут сверху вниз */
-    align-items: flex-start;
-    gap: 80px; /* расстояние между блоком текста и описанием */
-  }
-  
-  .textBlock {
-    width: 716px; /* ширина блока caption + title по макету */
-    display: flex;
-    flex-direction: column; /* caption над title */
-    align-items: flex-start;
-    gap: 20px; /* расстояние между caption и title */
-  }
-  
-  
-  /* =========================
+
+.row {
+  position: relative; /* чтобы контент был выше overlay */
+  z-index: 1;
+  display: flex; /* текст слева, кнопка справа */
+  justify-content: space-between; /* раздвигаем по краям */
+  align-items: flex-end; /* кнопка выравнивается по низу */
+  padding-top: 90px; /* отступ сверху внутри hero */
+  padding-bottom: 60px;
+}
+
+.content {
+  width: 675px; /* ширина текстового блока по макету */
+  display: flex;
+  flex-direction: column; /* элементы идут сверху вниз */
+  align-items: flex-start;
+  gap: 80px; /* расстояние между блоком текста и описанием */
+}
+
+.textBlock {
+  width: 716px; /* ширина блока caption + title по макету */
+  display: flex;
+  flex-direction: column; /* caption над title */
+  align-items: flex-start;
+  gap: 20px; /* расстояние между caption и title */
+}
+
+/* =========================
      TEXT (текстовые элементы)
      ========================= */
-  
-  .caption {
-    margin: 0; /* убираем стандартный отступ */
-    font-family: "Inter", sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 20px; /* из макета */
-    line-height: 130%; /* ≈ 26px */
-    letter-spacing: -0.02em;
-    color: #ffffff;
-  }
-  
-  .title {
-    margin: 0; /* убираем стандартный отступ */
-    width: 716px; /* ширина заголовка по макету */
-    font-family: "Inter", sans-serif;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 60px; /* из макета */
-    line-height: 100%; /* ≈ 62px */
-    letter-spacing: -0.02em;
-    text-transform: uppercase;
-    color: #ffffff;
-  }
-  
-  .description {
-    margin: 0; /* убираем стандартный отступ */
-    width: 675px; /* ширина описания по макету */
-    font-family: "Inter", sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 22px; /* из макета */
-    line-height: 130%; /* ≈ 29px */
-    letter-spacing: -0.02em;
-    color: #ffffff;
-  }
-  
-  
-  /* =========================
+
+.caption {
+  margin: 0; /* убираем стандартный отступ */
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px; /* из макета */
+  line-height: 130%; /* ≈ 26px */
+  letter-spacing: -0.02em;
+  color: #ffffff;
+}
+
+.title {
+  margin: 0; /* убираем стандартный отступ */
+  width: 716px; /* ширина заголовка по макету */
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 60px; /* из макета */
+  line-height: 100%; /* ≈ 62px */
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.description {
+  margin: 0; /* убираем стандартный отступ */
+  width: 675px; /* ширина описания по макету */
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px; /* из макета */
+  line-height: 130%; /* ≈ 29px */
+  letter-spacing: -0.02em;
+  color: #ffffff;
+}
+
+/* =========================
      BUTTON (кнопка справа)
      ========================= */
-  
-  .button {
-    display: flex; /* кружок и текст в строку */
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 20px; /* расстояние между кружком и текстом */
-  
-    width: 275px; /* ширина кнопки по макету */
-    height: 52px; /* высота кнопки по макету */
-    padding: 20px; /* внутренний отступ по макету */
-  
-    border: none; /* убираем стандартную рамку */
-    border-radius: 100px; /* скругление как в макете */
-  
-    background: #ffffff;
-    cursor: pointer;
-  }
-  
-  .buttonDot {
-    width: 12px; /* размер кружка */
-    height: 12px;
-    flex-shrink: 0; /* не сжимать */
-    border-radius: 50%; /* делаем круг */
-    background: #6ae6da; /* цвет кружка из макета */
-  }
-  
-  .buttonText {
-    font-family: "Inter", sans-serif;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 16px; /* размер текста кнопки */
-    line-height: 104%; /* ≈ 17px */
-    letter-spacing: -0.02em;
-    color: #0f1c42; /* цвет текста кнопки из макета */
-    white-space: nowrap; /* текст не переносится */
-  }
-  
-  
-  /* =========================
+
+.button {
+  display: flex; /* кружок и текст в строку */
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px; /* расстояние между кружком и текстом */
+
+  width: 275px; /* ширина кнопки по макету */
+  height: 52px; /* высота кнопки по макету */
+  padding: 20px; /* внутренний отступ по макету */
+
+  border: none; /* убираем стандартную рамку */
+  border-radius: 100px; /* скругление как в макете */
+
+  background: #ffffff;
+  cursor: pointer;
+}
+
+.buttonDot {
+  width: 12px; /* размер кружка */
+  height: 12px;
+  flex-shrink: 0; /* не сжимать */
+  border-radius: 50%; /* делаем круг */
+  background: #6ae6da; /* цвет кружка из макета */
+}
+
+.buttonText {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px; /* размер текста кнопки */
+  line-height: 104%; /* ≈ 17px */
+  letter-spacing: -0.02em;
+  color: #0f1c42; /* цвет текста кнопки из макета */
+  white-space: nowrap; /* текст не переносится */
+}
+
+/* =========================
      RESPONSIVE (адаптив)
      ========================= */
-  
-  @media (max-width: 1024px) {
-    .hero {
-      height: auto; /* на планшете убираем жесткую высоту */
-      padding-bottom: 48px;
-    }
-  
-    .row {
-      flex-direction: column; /* ставим кнопку под текст */
-      align-items: flex-start;
-      gap: 32px;
-      padding-top: 72px;
-    }
-  
-    .content {
-      width: 100%;
-      max-width: 675px;
-      gap: 40px;
-    }
-  
-    .textBlock {
-      width: 100%;
-      max-width: 716px;
-      gap: 24px;
-    }
-  
-    .title {
-      width: 100%;
-      font-size: 48px;
-    }
-  
-    .description {
-      width: 100%;
-      max-width: 675px;
-      font-size: 20px;
-    }
+
+@media (max-width: 1024px) {
+  .hero {
+    height: auto; /* на планшете убираем жесткую высоту */
+    padding-bottom: 48px;
   }
-  
-  @media (max-width: 768px) {
-    .hero {
-      padding-bottom: 40px;
-    }
-  
-    .row {
-      padding-top: 56px;
-      gap: 24px;
-    }
-  
-    .content {
-      gap: 24px;
-    }
-  
-    .textBlock {
-      gap: 16px;
-    }
-  
-    .caption {
-      font-size: 16px;
-    }
-  
-    .title {
-      font-size: 34px;
-      line-height: 110%;
-    }
-  
-    .description {
-      font-size: 16px;
-      line-height: 150%;
-    }
-  
-    .button {
-      width: auto;
-      min-height: 52px;
-      padding: 18px 20px;
-    }
+
+  .row {
+    flex-direction: column; /* ставим кнопку под текст */
+    align-items: flex-start;
+    gap: 32px;
+    padding-top: 72px;
   }
+
+  .content {
+    width: 100%;
+    max-width: 675px;
+    gap: 40px;
+  }
+
+  .textBlock {
+    width: 100%;
+    max-width: 716px;
+    gap: 24px;
+  }
+
+  .title {
+    width: 100%;
+    font-size: 48px;
+  }
+
+  .description {
+    width: 100%;
+    max-width: 675px;
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding-bottom: 40px;
+  }
+
+  .row {
+    padding-top: 56px;
+    gap: 24px;
+  }
+
+  .content {
+    gap: 24px;
+  }
+
+  .textBlock {
+    gap: 16px;
+  }
+
+  .caption {
+    font-size: 16px;
+  }
+
+  .title {
+    font-size: 34px;
+    line-height: 110%;
+  }
+
+  .description {
+    font-size: 16px;
+    line-height: 150%;
+  }
+
+  .button {
+    width: auto;
+    min-height: 52px;
+    padding: 18px 20px;
+  }
+}
