@@ -12,7 +12,7 @@ const directions = [
 export function AboutHero() {
   return (
     <section className={styles.section}>
-      <div className={styles.overlay} /> {/* затемнение */}
+      {/* <div className={styles.overlay} /> */}
       <Container className={styles.container}>
         <div className={styles.row}>
           {/* Текстовый блок */}

@@ -4,7 +4,7 @@ import styles from "./home-hero.module.css";
 export function HomeHero() {
   return (
     <section className={styles.hero}>
-      <div className={styles.overlay} />
+      {/* <div className={styles.overlay} /> */}
 
       <Container>
         <div className={styles.row}>

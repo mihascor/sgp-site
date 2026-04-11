@@ -62,7 +62,7 @@ const documents: DocumentItem[] = [
     id: 6,
     title: "Сертификат соответствия ИНТЕРГАЗСЕРТ",
     description:
-      "Проектирование инженерно-технических средств охраны на объектах ПАО Газпром",
+      "Проектирование инженерно-технических средств охраны на объектах Группы Газпром",
     status: "Сертифицировано",
     href: "/documents/sertifikat_sootvetstviya_intergazsert_proektirovanie_inzhenerno_tekhnicheskikh.pdf",
     statusWide: true,
