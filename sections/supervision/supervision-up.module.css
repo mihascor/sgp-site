@@ -1,0 +1,235 @@
+.section {
+  padding: 60px 0 120px;
+}
+
+/* Заголовок */
+.title {
+  font-weight: 600;
+  font-size: 45px;
+  line-height: 105%;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+  color: #0f1c42;
+
+  margin-bottom: 60px;
+}
+
+/* Верхний блок */
+.topRow {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+
+  margin-bottom: 60px;
+}
+
+.subtitle {
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 110%;
+  text-transform: uppercase;
+  color: #0f1c42;
+}
+
+.description {
+  font-size: 22px;
+  line-height: 135%;
+  color: #0f1c42;
+}
+
+.functionalWrapper {
+  margin-bottom: 60px;
+}
+
+.functionalTitle {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 135%;
+  color: #0f1c42;
+
+  margin-bottom: 20px;
+}
+/* Заголовки блоков */
+.blockTitle {
+  font-weight: 600;
+  font-size: 45px;
+  line-height: 105%;
+  text-transform: uppercase;
+  color: #0f1c42;
+
+  margin-bottom: 60px;
+}
+
+/* Функционал */
+.functionalBlock {
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 30px 40px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  margin-bottom: 60px;
+}
+
+.row {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  padding-bottom: 10px;
+  border-bottom: 1px dashed rgba(125, 134, 156, 0.4);
+}
+
+.row:last-child {
+  border-bottom: none;
+}
+
+.number {
+  font-weight: 600;
+  color: #032ca6;
+}
+
+.rowText {
+  font-size: 16px;
+  color: #0f1c42;
+}
+
+/* Средний блок */
+.middleRow {
+  display: grid;
+  grid-template-columns: 472px 1fr;
+  gap: 20px;
+
+  margin-bottom: 60px;
+}
+
+.infoCard {
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 30px 40px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.smallTitle {
+  font-weight: 600;
+  font-size: 20px;
+  color: #0f1c42;
+}
+
+.smallText {
+  font-size: 16px;
+  line-height: 135%;
+  color: #0f1c42;
+}
+
+/* Картинка */
+.imageBlock {
+  position: relative;
+  height: 148px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.image {
+  object-fit: cover;
+}
+
+/* Карточки */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.card {
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 40px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.icon {
+  width: 50px;
+  height: 50px;
+  background: #c3d2fe;
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cardContent {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.cardContent h3 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #0f1c42;
+}
+
+.cardContent p {
+  font-size: 16px;
+  line-height: 135%;
+  color: #0f1c42;
+}
+
+/* ===================== */
+/* Адаптив */
+/* ===================== */
+
+@media (max-width: 1024px) {
+  .topRow {
+    grid-template-columns: 1fr;
+  }
+
+  .middleRow {
+    grid-template-columns: 1fr;
+  }
+
+  .cards {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 32px;
+  }
+
+  .blockTitle {
+    font-size: 32px;
+  }
+
+  .cards {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .description {
+    font-size: 18px;
+  }
+
+  .functionalBlock {
+    padding: 20px;
+  }
+
+  .infoCard {
+    padding: 20px;
+  }
+
+  .card {
+    padding: 20px;
+  }
+}

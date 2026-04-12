@@ -1,0 +1,142 @@
+.section {
+  padding: 0 0 120px;
+  margin-bottom: -350px;
+}
+
+/* Панель */
+.panel {
+  border-radius: 100px;
+  padding: 120px 0; /* важно */
+
+  position: relative;
+  z-index: 1;
+
+  background: radial-gradient(
+    84.99% 97.77% at 38.04% 97.77%,
+    /* 👈 ключ */ #eef1f7 0%,
+    #c3d1ed 100%
+  );
+
+  min-height: 900px; /* 👈 ВОТ КЛЮЧ */
+}
+
+/* Верхний блок */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+
+  margin-bottom: 60px;
+}
+
+.title {
+  max-width: 550px;
+
+  font-weight: 600;
+  font-size: 45px;
+  line-height: 105%;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+
+  color: #0f1c42;
+}
+
+.text {
+  max-width: 560px;
+
+  font-size: 22px;
+  line-height: 135%;
+  letter-spacing: -0.04em;
+
+  color: #0f1c42;
+}
+
+/* Карточки */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+/* Карточка */
+.card {
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 40px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+/* Круг под иконку */
+.iconWrapper {
+  width: 50px;
+  height: 50px;
+
+  background: #c3d2fe;
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Контент карточки */
+.cardContent {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.cardContent h3 {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 110%;
+
+  color: #0f1c42;
+}
+
+.cardContent p {
+  font-size: 16px;
+  line-height: 135%;
+
+  color: #0f1c42;
+}
+
+/* ================== АДАПТИВ ================== */
+
+@media (max-width: 1024px) {
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .header {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 768px) {
+  .panel {
+    padding: 80px 0;
+  }
+
+  .title {
+    font-size: 34px;
+  }
+
+  .text {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .cards {
+    grid-template-columns: 1fr;
+  }
+
+  .card {
+    padding: 30px;
+  }
+}
