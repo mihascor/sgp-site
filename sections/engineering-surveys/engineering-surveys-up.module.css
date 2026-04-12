@@ -1,0 +1,129 @@
+.section {
+  padding: 60px 0 120px;
+}
+
+.title {
+  margin-bottom: 120px;
+  max-width: 800px;
+
+  font-weight: 600;
+  font-size: 45px;
+  line-height: 105%;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+
+  color: #0f1c42;
+}
+
+/* верхний блок */
+.top {
+  margin-top: 60px;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+}
+
+.subtitle {
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 110%;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+
+  color: #0f1c42;
+}
+
+.text {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 135%;
+  letter-spacing: -0.04em;
+
+  color: #0f1c42;
+}
+
+/* КЛЮЧ: единая сетка */
+.grid {
+  margin-top: 60px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+/* кнопка */
+.button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 15px 40px;
+  background: #0f1c42;
+  border-radius: 10px;
+
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/* левая часть */
+.left {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+/* адаптив */
+
+@media (max-width: 1024px) {
+  .top {
+    gap: 40px;
+  }
+
+  .title {
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 768px) {
+  .top {
+    grid-template-columns: 1fr;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .grid a:nth-child(1) {
+    order: 1;
+  }
+
+  .grid a:nth-child(2) {
+    order: 3;
+  }
+
+  .grid a:nth-child(3) {
+    order: 2;
+  }
+
+  .grid a:nth-child(4) {
+    order: 4;
+  }
+
+  .title {
+    font-size: 30px;
+  }
+
+  .text {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 24px;
+  }
+
+  .button {
+    padding: 12px 20px;
+  }
+}

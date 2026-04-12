@@ -1,0 +1,221 @@
+.section {
+  padding: 0 0 120px;
+  scroll-margin-top: 120px; /* высота хедера */
+}
+
+/* --- ВЕРХ --- */
+
+.top {
+  display: grid;
+  grid-template-columns: 570px 570px;
+  grid-template-rows: 159px 192px;
+  gap: 20px;
+}
+
+/* Синяя карточка */
+.titleCard {
+  position: relative;
+  grid-column: 1;
+  grid-row: 1;
+  background: #032ca6;
+  border-radius: 10px;
+  padding: 30px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+/* Заголовок */
+.title {
+  max-width: 380px;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 110%;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+/* Иконка */
+.iconWrapper {
+  position: relative;
+  width: 55px;
+  height: 55px;
+}
+
+.iconCircle {
+  position: absolute;
+  width: 55px;
+  height: 55px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+}
+
+.icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Картинка */
+.imageWrapper {
+  position: relative;
+  grid-column: 2;
+  grid-row: 1 / 3;
+  height: 371px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.image {
+  object-fit: cover;
+}
+
+/* --- ОПИСАНИЕ --- */
+
+.description {
+  grid-column: 1;
+  grid-row: 2;
+  margin-top: 0;
+  max-width: none;
+  background: #c3d1ed;
+  padding: 30px 40px;
+  border-radius: 10px;
+
+  font-size: 16px;
+  line-height: 135%;
+  color: #0f1c42;
+}
+
+/* --- СПИСОК РАБОТ --- */
+
+.workBlock {
+  margin-top: 80px;
+}
+
+.subtitle {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #0f1c42;
+}
+
+.workList {
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 30px 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+.workItem {
+  display: flex;
+  gap: 20px;
+  padding: 10px 0;
+  border-bottom: 1px dashed rgba(125, 134, 156, 0.4);
+}
+
+.workItem:last-child {
+  border-bottom: none;
+}
+
+.workIndex {
+  color: #032ca6;
+  font-weight: 600;
+  width: 30px;
+}
+
+.workText {
+  color: #0f1c42;
+}
+
+/* --- ОБОРУДОВАНИЕ --- */
+
+.equipmentBlock {
+  margin-top: 80px;
+}
+
+.equipmentGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.equipmentItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 10px 20px 10px 40px;
+  background: #ffffff;
+  border-radius: 10px;
+}
+
+.tag {
+  background: #c3d1ed;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+/* --- АДАПТИВ --- */
+
+@media (max-width: 1024px) {
+  .top {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+
+  .titleCard,
+  .imageWrapper,
+  .description {
+    grid-column: auto;
+    grid-row: auto;
+  }
+
+  .titleCard {
+    order: 1;
+  }
+
+  .imageWrapper {
+    order: 2;
+    height: 300px;
+  }
+
+  .description {
+    order: 3;
+  }
+
+  .imageWrapper {
+    height: 300px;
+  }
+
+  .equipmentGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 24px;
+  }
+
+  .description {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .section {
+    padding: 60px 0 80px;
+  }
+
+  .titleCard {
+    padding: 20px;
+  }
+
+  .equipmentItem {
+    padding: 10px 15px;
+  }
+}
