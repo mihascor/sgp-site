@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export function EngineeringSurveysFour() {
   return (
-    <section id="engineering-ecology" className={styles.section}>
+    <section id="ecology" className={styles.section}>
       <Container>
         {/* --- ВЕРХНИЙ БЛОК --- */}
         <div className={styles.top}>

@@ -1,5 +1,6 @@
 .section {
   padding: 0 0 120px;
+  scroll-margin-top: 120px; /* высота хедера */
 }
 
 /* --- ВЕРХ --- */
