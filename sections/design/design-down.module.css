@@ -1,0 +1,148 @@
+.section {
+  padding: 0 0 120px;
+}
+
+/* Главный заголовок */
+.title {
+  font-size: 45px;
+  line-height: 105%;
+  font-weight: 600;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+  color: #0f1c42;
+
+  margin-bottom: 60px;
+}
+
+/* Блоки */
+.blockTop {
+  margin-bottom: 60px;
+}
+
+.blockBottom {
+  margin-bottom: 0;
+}
+
+/* Подзаголовки */
+.subtitle {
+  font-size: 30px;
+  line-height: 110%;
+  font-weight: 600;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+  color: #0f1c42;
+
+  margin-bottom: 40px;
+}
+
+/* Теги сверху */
+.tags {
+  display: flex;
+  gap: 20px;
+}
+
+.tag {
+  flex: 1; /* ключевое */
+  display: flex;
+  align-items: center;
+  gap: 15px;
+
+  padding: 10px 15px;
+  background: #ffffff;
+  border-radius: 5px;
+}
+
+/* Сетка */
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+/* Колонки */
+.column {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Вложенные колонки справа */
+.subColumn {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Заголовки групп */
+.groupTitle {
+  font-size: 20px;
+  line-height: 135%;
+  font-weight: 600;
+  color: #0f1c42;
+}
+
+/* Списки */
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Элемент списка */
+.item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+
+  padding: 10px 15px;
+  background: #ffffff;
+  border-radius: 5px;
+
+  font-size: 16px;
+  line-height: 135%;
+  color: #0f1c42;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+  transform: scale(0.85);
+}
+
+/* ================= АДАПТИВ ================= */
+
+@media (max-width: 1024px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 34px;
+  }
+
+  .subtitle {
+    font-size: 24px;
+  }
+
+  .tags {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 28px;
+  }
+
+  .subtitle {
+    font-size: 20px;
+  }
+
+  .item,
+  .tag {
+    font-size: 14px;
+  }
+}

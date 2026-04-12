@@ -1,8 +1,12 @@
 import { ConsultationSection } from "@/components/shared/consultation-section/ConsultationSection";
+import { DesignUp } from "@/sections/design/design-up";
+import { DesignDown } from "@/sections/design/design-down";
 
 export default function Page() {
   return (
     <>
+      <DesignUp />
+      <DesignDown />
       <ConsultationSection
         title={
           <>
