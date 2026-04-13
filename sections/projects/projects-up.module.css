@@ -1,0 +1,167 @@
+.section {
+  padding: 60px 0 120px;
+}
+
+/* --- Хлебные крошки --- */
+.breadcrumbs {
+  margin-bottom: 75px;
+}
+
+/* --- Верхний блок --- */
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 60px;
+}
+
+.left {
+  max-width: 570px;
+}
+
+.title {
+  font-size: 45px;
+  font-weight: 600;
+  line-height: 105%;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+  color: #0f1c42;
+
+  margin-bottom: 20px;
+}
+
+.text {
+  font-size: 22px;
+  line-height: 135%;
+  letter-spacing: -0.04em;
+  color: #0f1c42;
+}
+
+/* --- Статистика --- */
+.stats {
+  display: flex;
+  gap: 20px;
+}
+
+.statCard {
+  width: 223px;
+  height: 130px;
+
+  background: #0f1c42;
+  border-radius: 10px 50px 10px 0;
+
+  padding: 25px 30px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.statNumber {
+  font-size: 45px;
+  font-weight: 600;
+  line-height: 105%;
+  letter-spacing: -0.04em;
+  color: #ffffff;
+}
+
+.statText {
+  font-size: 22px;
+  line-height: 135%;
+  color: #ffffff;
+}
+
+/* --- Заголовок объектов --- */
+.subtitle {
+  font-size: 45px;
+  font-weight: 600;
+  line-height: 105%;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+  color: #0f1c42;
+
+  margin-bottom: 60px;
+}
+
+/* --- Сетка --- */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  column-gap: 20px; /* горизонталь */
+  row-gap: 40px; /* вертикаль */
+}
+
+/* --- Карточка --- */
+.card {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Верх карточки */
+.cardImage {
+  background: #032ca6;
+  border-radius: 15px 15px 0 0;
+  overflow: hidden;
+}
+
+/* Низ карточки */
+.cardContent {
+  background: #ffffff;
+  border-radius: 0 0 15px 15px;
+  padding: 30px 40px;
+}
+
+.cardContent p {
+  font-size: 16px;
+  line-height: 135%;
+  color: #0f1c42;
+  font-weight: 500;
+}
+
+/* --- Адаптив --- */
+
+@media (max-width: 1024px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .top {
+    flex-direction: column;
+    gap: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .title,
+  .subtitle {
+    font-size: 32px;
+  }
+
+  .text {
+    font-size: 18px;
+  }
+
+  .statCard {
+    width: 180px;
+    height: 110px;
+  }
+
+  .statNumber {
+    font-size: 32px;
+  }
+
+  .statText {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .stats {
+    flex-direction: column;
+  }
+}

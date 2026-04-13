@@ -1,3 +1,5 @@
-export default function ClientsPage() {
-    return <main>Клиенты</main>
-  }
+import { Clients } from "@/sections/clients/clients";
+
+export default function Page() {
+  return <Clients />;
+}

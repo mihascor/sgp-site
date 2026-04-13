@@ -1,0 +1,88 @@
+.section {
+  padding: 60px 0 120px;
+}
+
+/* Хлебные крошки */
+.breadcrumbs {
+  margin-bottom: 75px;
+}
+
+/* Заголовок */
+.header {
+  margin-bottom: 60px;
+  max-width: 700px;
+}
+
+.title {
+  font-size: 45px;
+  line-height: 105%;
+  font-weight: 600;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+  color: #0f1c42;
+
+  margin-bottom: 20px;
+}
+
+.text {
+  font-size: 22px;
+  line-height: 135%;
+  letter-spacing: -0.04em;
+  color: #0f1c42;
+}
+
+/* Сетка */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+/* Карточка */
+.card {
+  height: 100px;
+  border-radius: 10px;
+  background: #eef1f7;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Активная карточка (первая синяя) */
+.active {
+  background: #032ca6;
+}
+
+/* Логотип */
+.logo {
+  object-fit: contain;
+}
+
+/* ================= АДАПТИВ ================= */
+
+@media (max-width: 1024px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 32px;
+  }
+
+  .text {
+    font-size: 18px;
+  }
+
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
