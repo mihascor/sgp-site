@@ -25,31 +25,31 @@ const regionGroups: RegionGroup[] = [
     id: "north-west",
     label: "Северо-Запад:",
     cities: [
-      { id: "saint-petersburg", name: "Санкт-Петербург", x: 17.5, y: 34.2 },
-      { id: "vologda", name: "Вологда", x: 24.8, y: 37.2 },
+      { id: "saint-petersburg", name: "Санкт-Петербург", x: 16.8, y: 33.5 },
+      { id: "vologda", name: "Вологда", x: 24.5, y: 36.5 },
     ],
   },
   {
     id: "center-south",
     label: "Центр и Юг:",
     cities: [
-      { id: "voronezh", name: "Воронеж", x: 19.8, y: 49.5 },
-      { id: "ryazan", name: "Рязань", x: 22.8, y: 45.6 },
-      { id: "stavropol", name: "Ставрополь", x: 12.8, y: 62.8 },
+      { id: "voronezh", name: "Воронеж", x: 20.5, y: 50.5 },
+      { id: "ryazan", name: "Рязань", x: 23.5, y: 46.5 },
+      { id: "stavropol", name: "Ставрополь", x: 14.5, y: 64.5 },
     ],
   },
   {
     id: "volga",
     label: "Поволжье:",
     cities: [
-      { id: "kazan", name: "Казань", x: 31.6, y: 48.2 },
-      { id: "nizhny-novgorod", name: "Нижний Новгород", x: 28.2, y: 43.8 },
+      { id: "kazan", name: "Казань", x: 32.5, y: 48.5 },
+      { id: "nizhny-novgorod", name: "Нижний Новгород", x: 29.5, y: 44.5 },
     ],
   },
   {
     id: "siberia",
     label: "Сибирь:",
-    cities: [{ id: "tomsk", name: "Томск", x: 57.2, y: 53.8 }],
+    cities: [{ id: "tomsk", name: "Томск", x: 58.5, y: 54.5 }],
   },
 ];
 
