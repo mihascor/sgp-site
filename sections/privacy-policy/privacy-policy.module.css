@@ -1,0 +1,158 @@
+.section {
+  padding: 60px 0 120px;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 0px;
+}
+/* TITLE */
+
+.title {
+  font-family: "Inter";
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 105%;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+  color: #0f1c42;
+}
+
+/* GROUP TITLE */
+
+.groupTitle {
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 135%;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+  color: #0f1c42;
+}
+
+/* CARD TEXT */
+
+.card h3 {
+  font-size: 24px;
+  font-weight: 500;
+  color: #0f1c42;
+}
+
+.card p {
+  font-size: 16px;
+  line-height: 135%;
+  color: #0f1c42;
+}
+
+/* BLUE TERM */
+
+.blue {
+  font-size: 16px;
+  font-weight: 600;
+  color: #032ca6;
+}
+
+/* LIST */
+
+.list li {
+  font-size: 16px;
+  color: #0f1c42;
+}
+
+.content {
+  margin-top: 60px;
+}
+
+/* Заголовки из md */
+.content h2 {
+  font-size: 30px;
+  font-weight: 600;
+  margin: 40px 0 20px;
+  color: #0f1c42;
+}
+
+.content h3 {
+  font-size: 24px;
+  font-weight: 500;
+  margin: 30px 0 15px;
+  color: #0f1c42;
+}
+
+/* Текст */
+.content p {
+  font-size: 16px;
+  line-height: 135%;
+  margin-bottom: 16px;
+  color: #0f1c42;
+}
+
+/* Списки */
+.content ul {
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+
+.content li {
+  margin-bottom: 8px;
+}
+
+.grid-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px 40px;
+  list-style: none;
+  padding: 0;
+}
+
+.content ol {
+  list-style: decimal;
+  padding-left: 20px;
+}
+
+.content ol li {
+  margin-bottom: 10px;
+}
+
+.content ul {
+  list-style: none; /* убираем стандартные точки */
+  padding-left: 0;
+}
+
+.content ul li {
+  position: relative;
+  padding-left: 20px;
+}
+
+.content ul li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 8px;
+
+  width: 6px;
+  height: 6px;
+
+  background-color: #0f1c42; /* цвет как текст */
+  border-radius: 50%;
+}
+
+.content h4 {
+  font-size: 18px; /* подбери под макет */
+  font-weight: 600; /* или 700 если надо жирнее */
+  margin: 20px 0 10px;
+  color: #0f1c42;
+}
+
+/* ADAPTIVE */
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 32px;
+  }
+
+  .groupTitle {
+    font-size: 24px;
+  }
+}
