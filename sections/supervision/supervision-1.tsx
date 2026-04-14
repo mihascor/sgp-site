@@ -1,4 +1,4 @@
-import styles from "./supervision-up.module.css";
+import styles from "./supervision-1.module.css";
 import { Container } from "@/components/shared/container/Container";
 import { Breadcrumbs } from "@/components/shared/breadcrumbs/Breadcrumbs";
 import Image from "next/image";
@@ -79,7 +79,7 @@ export function SupervisionUp() {
 
             <div className={styles.imageBlock}>
               <Image
-                src="/element/supervision/design-down-Rectangle 143.png"
+                src="/element/supervision/supervision-2-Rectangle 143.png"
                 alt=""
                 fill
                 className={styles.image}
@@ -98,17 +98,17 @@ export function SupervisionUp() {
         <div className={styles.cards}>
           {[
             {
-              icon: "/element/supervision/supervision-up-1.svg",
+              icon: "/element/supervision/supervision-1-1.svg",
               title: "Решение технических вопросов",
               text: "Оперативное решение технических вопросов, возникающих в процессе реализации стройки.",
             },
             {
-              icon: "/element/supervision/supervision-up-2.svg",
+              icon: "/element/supervision/supervision-1-2.svg",
               title: "Согласование изменений технических решений",
               text: "Согласование изменений технических решений.",
             },
             {
-              icon: "/element/supervision/supervision-up-3.svg",
+              icon: "/element/supervision/supervision-1-3.svg",
               title: "Информирование заказчика о нарушениях",
               text: "Информирование заказчика о некачественном выполнении работ и о срывах сроков устранения замечаний подрядчиком.",
             },

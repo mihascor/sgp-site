@@ -1,4 +1,4 @@
-import styles from "./supervision-down.module.css";
+import styles from "./supervision-2.module.css";
 import { Container } from "@/components/shared/container/Container";
 import Image from "next/image";
 
@@ -25,22 +25,22 @@ export function SupervisionDown() {
           <div className={styles.cards}>
             {[
               {
-                icon: "/element/supervision/supervision-down-1.svg",
+                icon: "/element/supervision/supervision-2-1.svg",
                 title: "Качество",
                 text: "Контроль реализации всех тех. требований",
               },
               {
-                icon: "/element/supervision/supervision-down-2.svg",
+                icon: "/element/supervision/supervision-2-2.svg",
                 title: "Сроки",
                 text: "Реализация графика строительных работ",
               },
               {
-                icon: "/element/supervision/supervision-down-3.svg",
+                icon: "/element/supervision/supervision-2-3.svg",
                 title: "Экономия",
                 text: "Предотвращение переделок и доп. затрат",
               },
               {
-                icon: "/element/supervision/supervision-down-4.svg",
+                icon: "/element/supervision/supervision-2-4.svg",
                 title: "Документооборот",
                 text: "Полное ведение отчётной документации",
               },
