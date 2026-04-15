@@ -1,6 +1,8 @@
 import Image from "next/image";
-import styles from "./documents-info.module.css";
+import styles from "./documents-2.module.css";
 import { Container } from "@/components/shared/container/Container";
+
+// Документы - секция 2
 
 export function DocumentsInfo() {
   return (

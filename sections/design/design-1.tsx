@@ -1,6 +1,8 @@
-import styles from "./design-up.module.css";
+import styles from "./design-1.module.css";
 import { Container } from "@/components/shared/container/Container";
 import { Breadcrumbs } from "@/components/shared/breadcrumbs/Breadcrumbs";
+
+// ВЫПОЛНЕНИЕ КОМПЛЕКСОВ ИНЖЕНЕРНО-ТЕХНИЧЕСКИХ СРЕДСТВ ОХРАНЫ - секция 1
 
 export function DesignUp() {
   return (

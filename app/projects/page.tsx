@@ -1,6 +1,6 @@
 import { ConsultationSection } from "@/components/shared/consultation-section/ConsultationSection";
-import { ProjectsUp } from "@/sections/projects/projects-up";
-import { ProjectsDown } from "@/sections/projects/projects-down";
+import { ProjectsUp } from "@/sections/projects/projects-1";
+import { ProjectsDown } from "@/sections/projects/projects-2";
 
 export default function Page() {
   return (

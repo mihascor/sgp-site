@@ -2,6 +2,8 @@ import styles from "./supervision-2.module.css";
 import { Container } from "@/components/shared/container/Container";
 import Image from "next/image";
 
+// Осуществление авторского надзора за строительством 2 секция
+
 export function SupervisionDown() {
   return (
     <section className={styles.section}>

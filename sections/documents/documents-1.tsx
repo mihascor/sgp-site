@@ -1,8 +1,10 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Container } from "@/components/shared/container/Container";
-import styles from "./documents-dl.module.css";
+import styles from "./documents-1.module.css";
 import { Breadcrumbs } from "@/components/shared/breadcrumbs/Breadcrumbs";
+
+// Документы - секция 1
 
 type DocumentItem = {
   id: number;

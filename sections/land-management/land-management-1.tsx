@@ -1,7 +1,9 @@
 import Image from "next/image";
-import styles from "./land-management-up.module.css";
+import styles from "./land-management-1.module.css";
 import { Container } from "@/components/shared/container/Container";
 import { Breadcrumbs } from "@/components/shared/breadcrumbs/Breadcrumbs";
+
+// Землеустроительные работы - 1 секция
 
 export function LandManagementUp() {
   return (

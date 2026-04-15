@@ -1,6 +1,8 @@
-import styles from "./projects-down.module.css";
+import styles from "./projects-2.module.css";
 import { Container } from "@/components/shared/container/Container";
 import Image from "next/image";
+
+// Проекты 2 секция - примеры реализованных проектов
 
 // Секция проектов
 export function ProjectsDown() {

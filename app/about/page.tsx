@@ -1,8 +1,8 @@
-import { AboutHero } from '@/sections/about/about-hero'
-import { AboutReliability } from '@/sections/about/about-reliability'
-import { AboutKrp } from '@/sections/about/about-krp'
-import { AboutWorking } from '@/sections/about/about-working'
-import { AboutMembership } from '@/sections/about/about-membership'
+import { AboutHero } from "@/sections/about/about-1";
+import { AboutReliability } from "@/sections/about/about-2";
+import { AboutKrp } from "@/sections/about/about-3";
+import { AboutWorking } from "@/sections/about/about-4";
+import { AboutMembership } from "@/sections/about/about-5";
 
 export default function Page() {
   return (
@@ -13,5 +13,5 @@ export default function Page() {
       <AboutWorking />
       <AboutMembership />
     </>
-  )
+  );
 }

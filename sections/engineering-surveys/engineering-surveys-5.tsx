@@ -1,6 +1,8 @@
-import styles from "./engineering-surveys-four.module.css";
+import styles from "./engineering-surveys-5.module.css";
 import { Container } from "@/components/shared/container/Container";
 import Image from "next/image";
+
+// ВЫПОЛНЕНИЕ КОМПЛЕКСНЫХ ИНЖЕНЕРНЫХ ИЗЫСКАНИЙ - секция 5
 
 export function EngineeringSurveysFour() {
   return (

@@ -3,6 +3,8 @@ import { Container } from "@/components/shared/container/Container";
 import { Breadcrumbs } from "@/components/shared/breadcrumbs/Breadcrumbs";
 import ReactMarkdown from "react-markdown";
 
+// Политика обработки персональных данных
+
 // 👇 импорт markdown как raw текста
 import fs from "fs";
 import path from "path";

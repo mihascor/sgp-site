@@ -1,5 +1,7 @@
 import { Container } from "@/components/shared/container/Container";
-import styles from "./home-hero.module.css";
+import styles from "./home-1.module.css";
+
+// Главная - секция - 1
 
 export function HomeHero() {
   return (

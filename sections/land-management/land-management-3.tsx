@@ -1,6 +1,8 @@
-import styles from "./land-management-three.module.css";
+import styles from "./land-management-3.module.css";
 import { Container } from "@/components/shared/container/Container";
 import Image from "next/image";
+
+// Землеустроительные работы - 3 секция
 
 // Компонент кружков (6 точек)
 function Dots({ variant }: { variant: 1 | 2 | 3 | 4 | 5 | 6 }) {

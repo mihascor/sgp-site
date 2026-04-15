@@ -1,6 +1,8 @@
-import styles from "./about-hero.module.css";
+import styles from "./about-1.module.css";
 import { Container } from "@/components/shared/container/Container";
 import Link from "next/link";
+
+// О нас - секция 1
 
 const directions = [
   { title: "Инженерные изыскания", href: "/engineering-surveys" },

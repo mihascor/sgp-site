@@ -3,7 +3,9 @@
 import Image from "next/image";
 import { useState } from "react";
 import { Container } from "@/components/shared/container/Container";
-import styles from "./about-working.module.css";
+import styles from "./about-4.module.css";
+
+// О нас - секция 4
 
 type City = {
   id: string;

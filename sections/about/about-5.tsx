@@ -1,6 +1,8 @@
 import Image from "next/image";
-import styles from "./about-membership.module.css";
+import styles from "./about-5.module.css";
 import { Container } from "@/components/shared/container/Container";
+
+// О нас - секция 5
 
 export function AboutMembership() {
   return (

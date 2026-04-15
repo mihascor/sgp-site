@@ -1,6 +1,8 @@
 import Image from "next/image";
-import styles from "./about-reliability.module.css";
+import styles from "./about-2.module.css";
 import { Container } from "@/components/shared/container/Container";
+
+// О нас - секция 2
 
 // Неизменная надёжность
 export function AboutReliability() {

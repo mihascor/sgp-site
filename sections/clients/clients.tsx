@@ -3,6 +3,8 @@ import { Container } from "@/components/shared/container/Container";
 import { Breadcrumbs } from "@/components/shared/breadcrumbs/Breadcrumbs";
 import Image from "next/image";
 
+// ВЕДУЩИЕ КОМПАНИИ
+
 export function Clients() {
   return (
     <section className={styles.section}>

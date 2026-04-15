@@ -1,6 +1,8 @@
 import Image from "next/image";
 import { Container } from "@/components/shared/container/Container";
-import styles from "./land-management-two.module.css";
+import styles from "./land-management-2.module.css";
+
+// Землеустроительные работы - 2 секция
 
 const competencyCards = [
   {

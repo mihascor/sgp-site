@@ -1,5 +1,7 @@
 import styles from "./home-contacts.module.css";
 
+// Главная - секция - Контакты
+
 const offices = [
   {
     city: "Вологда",

@@ -1,7 +1,9 @@
-import styles from "./engineering-surveys-up.module.css";
+import styles from "./engineering-surveys-1.module.css";
 import { Container } from "@/components/shared/container/Container";
 import { Breadcrumbs } from "@/components/shared/breadcrumbs/Breadcrumbs";
 import Image from "next/image";
+
+// ВЫПОЛНЕНИЕ КОМПЛЕКСНЫХ ИНЖЕНЕРНЫХ ИЗЫСКАНИЙ - секция 1
 
 export function EngineeringSurveysUp() {
   return (

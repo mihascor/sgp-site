@@ -1,9 +1,9 @@
 import { ConsultationSection } from "@/components/shared/consultation-section/ConsultationSection";
-import { EngineeringSurveysUp } from "@/sections/engineering-surveys/engineering-surveys-up";
-import { EngineeringSurveysOne } from "@/sections/engineering-surveys/engineering-surveys-one";
-import { EngineeringSurveysTwo } from "@/sections/engineering-surveys/engineering-surveys-two";
-import { EngineeringSurveysThree } from "@/sections/engineering-surveys/engineering-surveys-three";
-import { EngineeringSurveysFour } from "@/sections/engineering-surveys/engineering-surveys-four";
+import { EngineeringSurveysUp } from "@/sections/engineering-surveys/engineering-surveys-1";
+import { EngineeringSurveysOne } from "@/sections/engineering-surveys/engineering-surveys-2";
+import { EngineeringSurveysTwo } from "@/sections/engineering-surveys/engineering-surveys-3";
+import { EngineeringSurveysThree } from "@/sections/engineering-surveys/engineering-surveys-4";
+import { EngineeringSurveysFour } from "@/sections/engineering-surveys/engineering-surveys-5";
 
 export default function Page() {
   return (

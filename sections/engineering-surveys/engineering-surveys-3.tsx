@@ -1,6 +1,8 @@
-import styles from "./engineering-surveys-two.module.css";
+import styles from "./engineering-surveys-3.module.css";
 import { Container } from "@/components/shared/container/Container";
 import Image from "next/image";
+
+// ВЫПОЛНЕНИЕ КОМПЛЕКСНЫХ ИНЖЕНЕРНЫХ ИЗЫСКАНИЙ - секция 3
 
 export function EngineeringSurveysTwo() {
   return (

@@ -1,7 +1,7 @@
 import { ConsultationSection } from "@/components/shared/consultation-section/ConsultationSection";
-import { LandManagementUp } from "@/sections/land-management/land-management-up";
-import { LandManagementTwo } from "@/sections/land-management/land-management-two";
-import { LandManagementThree } from "@/sections/land-management/land-management-three";
+import { LandManagementUp } from "@/sections/land-management/land-management-1";
+import { LandManagementTwo } from "@/sections/land-management/land-management-2";
+import { LandManagementThree } from "@/sections/land-management/land-management-3";
 
 export default function Page() {
   return (

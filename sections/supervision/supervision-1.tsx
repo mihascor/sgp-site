@@ -3,6 +3,8 @@ import { Container } from "@/components/shared/container/Container";
 import { Breadcrumbs } from "@/components/shared/breadcrumbs/Breadcrumbs";
 import Image from "next/image";
 
+// Осуществление авторского надзора за строительством 1 секция
+
 export function SupervisionUp() {
   return (
     <section className={styles.section}>

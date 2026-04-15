@@ -1,7 +1,9 @@
-import styles from "./projects-up.module.css";
+import styles from "./projects-1.module.css";
 import { Container } from "@/components/shared/container/Container";
 import { Breadcrumbs } from "@/components/shared/breadcrumbs/Breadcrumbs";
 import Image from "next/image";
+
+// Проекты 1 секция - опыт работы, объекты
 
 export function ProjectsUp() {
   return (

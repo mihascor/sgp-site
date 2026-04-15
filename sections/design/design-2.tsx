@@ -1,6 +1,8 @@
 import Image from "next/image";
-import styles from "./design-down.module.css";
+import styles from "./design-2.module.css";
 import { Container } from "@/components/shared/container/Container";
+
+// ВЫПОЛНЕНИЕ КОМПЛЕКСОВ ИНЖЕНЕРНО-ТЕХНИЧЕСКИХ СРЕДСТВ ОХРАНЫ - секция - 2
 
 export function DesignDown() {
   return (

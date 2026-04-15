@@ -1,7 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
-import styles from "./about-krp.module.css";
+import styles from "./about-3.module.css";
 import { Container } from "@/components/shared/container/Container";
+
+// О нас - секция 3
 
 // Данные карточек
 const items = [
