@@ -62,7 +62,7 @@ export function LandManagementTwo() {
             {/* Фото-карточка 1 */}
             <div className={`${styles.imageCard} ${styles.imageCardTop}`}>
               <Image
-                src="/element/land-management/land-management-two-Rectangle 131.png"
+                src="/element/land-management/Rectangle 131.png"
                 alt="Промышленный объект"
                 fill
                 className={styles.image}
@@ -90,7 +90,7 @@ export function LandManagementTwo() {
             {/* Фото-карточка 2 */}
             <div className={`${styles.imageCard} ${styles.imageCardBottom}`}>
               <Image
-                src="/element/land-management/land-management-two-Rectangle 131.png"
+                src="/element/land-management/Rectangle 132.png"
                 alt="Промышленный объект"
                 fill
                 className={styles.image}

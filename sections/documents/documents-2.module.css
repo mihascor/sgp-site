@@ -1,7 +1,7 @@
 .section {
   position: relative;
   min-height: 800px;
-  padding: 0 0 120px;
+  padding: 0 0 0;
   overflow: hidden;
 }
 
@@ -10,14 +10,14 @@
   position: absolute;
   inset: 0;
   z-index: 0;
-  border-radius: 100px;
+  border-radius: 0 0 100px 100px;
   background: radial-gradient(
     84.99% 97.77% at 38.04% 2.23%,
     #eef1f7 0%,
     #c3d1ed 100%
   );
   transform: scaleY(-1);
-  margin-bottom: 120px;
+  margin-bottom: 0;
 }
 
 /* Главная сетка секции */

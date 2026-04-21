@@ -27,10 +27,10 @@ export function HomeHero() {
             </p>
           </div>
 
-          <button type="button" className={styles.button}>
+          {/* <button type="button" className={styles.button}>
             <span className={styles.buttonDot} />
             <span className={styles.buttonText}>Бесплатная консультация</span>
-          </button>
+          </button> */}
         </div>
       </Container>
     </section>

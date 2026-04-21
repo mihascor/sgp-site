@@ -98,7 +98,7 @@ export function LandManagementThree() {
           {/* Картинка */}
           <div className={styles.imageWrapper}>
             <Image
-              src="/element/land-management/land-management-three-Rectangle 134.png"
+              src="/element/land-management/Rectangle 134.png"
               alt=""
               fill
               className={styles.image}

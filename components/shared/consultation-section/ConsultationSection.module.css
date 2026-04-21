@@ -1,5 +1,5 @@
 .section {
-  padding-bottom: 120px;
+  padding-bottom: 0;
 }
 
 .card {
@@ -49,6 +49,7 @@
   align-items: center;
   gap: 20px;
   flex-wrap: wrap;
+  margin-left: auto;
 }
 
 .button {

@@ -27,7 +27,7 @@ export function ProjectsDown() {
                   «Сила Сибири»
                 </>
               ),
-              img: "/element/projects/projects-down-1.png",
+              img: "/element/projects/Rectangle 108.png",
             },
             {
               title: (
@@ -37,7 +37,7 @@ export function ProjectsDown() {
                   газоконденсатное месторождение
                 </>
               ),
-              img: "/element/projects/projects-down-1.png",
+              img: "/element/projects/Rectangle 106.png",
             },
             {
               title: (
@@ -47,7 +47,7 @@ export function ProjectsDown() {
                   газоперерабатывающий завод
                 </>
               ),
-              img: "/element/projects/projects-down-1.png",
+              img: "/element/projects/Rectangle 107.png",
             },
             {
               title: (
@@ -57,7 +57,7 @@ export function ProjectsDown() {
                   нефтеперерабатывающий завод
                 </>
               ),
-              img: "/element/projects/projects-down-1.png",
+              img: "/element/projects/Rectangle 109.png",
             },
             {
               title: (
@@ -67,7 +67,7 @@ export function ProjectsDown() {
                   нефтеперерабатывающий завод
                 </>
               ),
-              img: "/element/projects/projects-down-1.png",
+              img: "/element/projects/Rectangle 110.png",
             },
             {
               title: (
@@ -77,7 +77,7 @@ export function ProjectsDown() {
                   газоснабжения»
                 </>
               ),
-              img: "/element/projects/projects-down-1.png",
+              img: "/element/projects/Rectangle 111.png",
             },
           ].map((item, index) => (
             <div key={index} className={styles.card}>

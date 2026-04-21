@@ -39,10 +39,10 @@ export function AboutHero() {
             </div>
 
             {/* Кнопка */}
-            <Link href="/contacts" className={styles.cta}>
+            {/* <Link href="/contacts" className={styles.cta}>
               <span className={styles.dot}></span>
               <span>Бесплатная консультация</span>
-            </Link>
+            </Link> */}
           </div>
         </div>
       </Container>

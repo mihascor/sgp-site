@@ -179,16 +179,17 @@ export function Header() {
                 Реализованные проекты
               </Link>
 
-              <Link href="/contacts" className={styles.navLink}>
+              {/* <Link href="/contacts" className={styles.navLink}>
                 Контакты
-              </Link>
+              </Link> */}
             </nav>
           </div>
 
           <div className={styles.right}>
-            <a href="tel:+78172239695" className={styles.ctaButton}>
-              Обсудить проект
-            </a>
+            <Link href="/contacts" className={styles.contactsLink}>
+              <span className={styles.dot}></span>
+              Контакты
+            </Link>
 
             <button
               type="button"
@@ -278,17 +279,18 @@ export function Header() {
                 Реализованные проекты
               </Link>
 
-              <Link
+              {/* <Link
                 href="/contacts"
                 className={styles.mobileLink}
                 onClick={closeAllMenus}
               >
                 Контакты
-              </Link>
+              </Link> */}
 
-              <a href="tel:+78172239695" className={styles.mobileCtaButton}>
-                Обсудить проект
-              </a>
+              <Link href="/contacts" className={styles.contactsLink}>
+                <span className={styles.dot}></span>
+                Контакты
+              </Link>
             </div>
           </div>
         )}

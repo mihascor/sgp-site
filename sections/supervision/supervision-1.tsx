@@ -81,7 +81,7 @@ export function SupervisionUp() {
 
             <div className={styles.imageBlock}>
               <Image
-                src="/element/supervision/supervision-2-Rectangle 143.png"
+                src="/element/supervision/Rectangle 143.png"
                 alt=""
                 fill
                 className={styles.image}

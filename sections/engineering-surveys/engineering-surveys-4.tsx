@@ -43,7 +43,7 @@ export function EngineeringSurveysThree() {
           {/* Картинка */}
           <div className={styles.imageWrapper}>
             <Image
-              src="/element/engineering-surveys/engineering-surveys-two-Rectangle 141.png"
+              src="/element/engineering-surveys/Rectangle 141.png"
               alt=""
               fill
               className={styles.image}

@@ -36,7 +36,7 @@ export function EngineeringSurveysOne() {
 
           <div className={styles.imageWrapper}>
             <Image
-              src="/element/engineering-surveys/engineering-surveys-up-Rectangle 139.png"
+              src="/element/engineering-surveys/Rectangle 139.png"
               alt=""
               fill
               className={styles.image}
