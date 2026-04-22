@@ -44,3 +44,17 @@
 .separator {
   margin: 0 10px;
 }
+
+/* Планшет */
+@media (max-width: 1024px) {
+  .breadcrumbs {
+    margin-bottom: 30px;
+  }
+}
+
+/* Мобильный */
+@media (max-width: 768px) {
+  .breadcrumbs {
+    margin-bottom: 30px;
+  }
+}
