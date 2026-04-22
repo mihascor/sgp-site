@@ -116,6 +116,9 @@
   color: #0f1c42;
 }
 
+.desktopOnly {
+  display: inline;
+}
 /* ===== ADAPTIVE ===== */
 
 @media (max-width: 1024px) {
@@ -132,6 +135,10 @@
 @media (max-width: 768px) {
   .title {
     font-size: 36px;
+  }
+
+  .desktopOnly {
+    display: none;
   }
 
   .cardsTitle {
