@@ -64,8 +64,9 @@ export function HomeContacts() {
             <div className={styles.legalBlock}>
               <p className={styles.label}>Юридический адрес:</p>
               <p className={styles.legalAddress}>
-                160012, Вологодская обл., г. Вологда, ул. Козленская, д. 119а,
-                оф. 308/9
+                160012, Вологодская обл., г. Вологда,
+                <span className={styles.mobileBreak} /> ул. Козленская, д.
+                119а, оф. 308/9
               </p>
             </div>
           </div>

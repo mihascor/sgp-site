@@ -186,7 +186,10 @@ export function Header() {
           </div>
 
           <div className={styles.right}>
-            <Link href="/contacts" className={styles.contactsLink}>
+            <Link
+              href="/contacts"
+              className={`${styles.contactsLink} ${styles.headerContactsLink}`}
+            >
               <span className={styles.dot}></span>
               Контакты
             </Link>

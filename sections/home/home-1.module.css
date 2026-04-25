@@ -12,6 +12,10 @@
   margin-bottom: 120px;
 }
 
+.inner {
+  height: 100%; /* растягиваем внутренний контейнер на высоту hero */
+}
+
 /* =========================
      OVERLAY (затемнение)
      ========================= */
@@ -176,16 +180,22 @@
 
 @media (max-width: 768px) {
   .hero {
-    padding-bottom: 40px;
+    height: 420px;
+    padding-bottom: 0;
+    margin-bottom: 40px;
   }
 
   .row {
+    height: 100%;
+    box-sizing: border-box;
     padding-top: 56px;
+    padding-bottom: 40px;
     gap: 24px;
   }
 
   .content {
-    gap: 24px;
+    height: auto;
+    gap: 0;
   }
 
   .textBlock {
@@ -193,16 +203,20 @@
   }
 
   .caption {
-    font-size: 16px;
+    font-size: 10px;
   }
 
   .title {
-    font-size: 34px;
+    font-size: 23px;
     line-height: 110%;
   }
 
   .description {
-    font-size: 16px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 40px;
+    font-size: 10px;
     line-height: 150%;
   }
 

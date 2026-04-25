@@ -220,6 +220,10 @@
   color: #0f1c42;
 }
 
+.headerContactsLink {
+  display: inline-flex;
+}
+
 .dot {
   width: 12px;
   height: 12px;
@@ -261,6 +265,10 @@
 
   .desktopNav,
   .ctaButton {
+    display: none;
+  }
+
+  .headerContactsLink {
     display: none;
   }
 
@@ -329,7 +337,7 @@
 
 @media (max-width: 575px) {
   .logo {
-    width: 82px;
+    width: 70px;
     height: auto;
   }
 

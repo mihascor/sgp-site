@@ -8,7 +8,7 @@ export function HomeHero() {
     <section className={styles.hero}>
       {/* <div className={styles.overlay} /> */}
 
-      <Container>
+      <Container className={styles.inner}>
         <div className={styles.row}>
           <div className={styles.content}>
             <div className={styles.textBlock}>
