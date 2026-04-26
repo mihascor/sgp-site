@@ -180,22 +180,23 @@
 
 @media (max-width: 768px) {
   .hero {
-    height: 420px;
+    height: auto;
+    min-height: 468px;
     padding-bottom: 0;
     margin-bottom: 40px;
   }
 
   .row {
-    height: 100%;
+    height: auto;
     box-sizing: border-box;
-    padding-top: 56px;
-    padding-bottom: 40px;
+    padding-top: 64px;
+    padding-bottom: 96px;
     gap: 24px;
   }
 
   .content {
     height: auto;
-    gap: 0;
+    gap: 58px;
   }
 
   .textBlock {
@@ -203,21 +204,19 @@
   }
 
   .caption {
-    font-size: 10px;
+    font-size: 16px;
   }
 
   .title {
-    font-size: 23px;
-    line-height: 110%;
+    font-size: 38px;
+    line-height: 105%;
   }
 
   .description {
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 40px;
-    font-size: 10px;
-    line-height: 150%;
+    position: static;
+    max-width: 360px;
+    font-size: 18px;
+    line-height: 120%;
   }
 
   .button {
