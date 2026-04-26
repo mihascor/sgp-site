@@ -144,7 +144,7 @@ export function DocumentsDl() {
 
                 {/* Кнопки действий */}
                 <div className={styles.actions}>
-                  <a
+                  <Link
                     href={document.href}
                     target="_blank"
                     rel="noopener noreferrer"
@@ -160,9 +160,9 @@ export function DocumentsDl() {
                       aria-hidden="true"
                     />
                     <span>Просмотреть</span>
-                  </a>
+                  </Link>
 
-                  <a
+                  <Link
                     href={document.href}
                     download
                     className={styles.actionButton}
@@ -177,7 +177,7 @@ export function DocumentsDl() {
                       aria-hidden="true"
                     />
                     <span>Скачать PDF</span>
-                  </a>
+                  </Link>
                 </div>
               </article>
             ))}
