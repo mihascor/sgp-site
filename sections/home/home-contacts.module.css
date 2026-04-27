@@ -190,6 +190,10 @@
     gap: 20px;
   }
 
+  .container {
+    padding: 0 30px;
+  }
+
   /* Ряд контактов */
   .contactsRow {
     grid-template-columns: repeat(2, minmax(220px, 1fr));
