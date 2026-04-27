@@ -11,6 +11,7 @@
   @media (max-width: 1024px) {
     .container {
       max-width: 720px;
+      padding: 0 30px;
     }
   }
   
@@ -18,7 +19,6 @@
   @media (max-width: 768px) {
     .container {
       max-width: 100%;
-      padding-left: 16px;
-      padding-right: 16px;
+      padding: 0 30px;
     }
   }
