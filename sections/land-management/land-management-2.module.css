@@ -179,11 +179,11 @@
 /* Адаптив 768px */
 @media (max-width: 768px) {
   .section {
-    padding: 64px 0 88px;
+    padding: 0px 0 0px;
   }
 
   .panel {
-    padding: 40px 24px;
+    padding: 60px 0 60px;
     border-radius: 36px;
   }
 
