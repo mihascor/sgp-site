@@ -81,6 +81,9 @@
 }
 
 @media (max-width: 1199px) {
+  .section {
+    padding-bottom: 0;
+  }
   .card {
     border-radius: 72px 72px 0 0;
   }
@@ -113,7 +116,7 @@
 
 @media (max-width: 767px) {
   .section {
-    padding-bottom: 80px;
+    padding-bottom: 0;
   }
 
   .card {
