@@ -6,7 +6,11 @@
 
 /* Основной фон блока */
 .block {
-  background: radial-gradient(84.99% 97.77% at 38.04% 2.23%, #eef1f7 0%, #c3d1ed 100%);
+  background: radial-gradient(
+    84.99% 97.77% at 38.04% 2.23%,
+    #eef1f7 0%,
+    #c3d1ed 100%
+  );
   border-radius: 100px;
   padding: 120px 60px 72px;
 }
@@ -191,11 +195,11 @@
 /* ===== 768 ===== */
 @media (max-width: 768px) {
   .section {
-    padding: 48px 0;
+    padding: 0px 0 0;
   }
 
   .block {
-    border-radius: 40px;
+    border-radius: 30px;
     padding: 56px 24px 40px;
   }
 

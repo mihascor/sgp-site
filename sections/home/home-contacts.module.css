@@ -183,7 +183,7 @@
 }
 
 /* Адаптация для планшетов */
-@media (max-width: 1199px) {
+@media (max-width: 1024px) {
   /* Основная сетка */
   .layout {
     grid-template-columns: 1fr;
@@ -207,7 +207,7 @@
 }
 
 /* Адаптация для мобильных */
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   /* Секция контактов */
   .section {
     padding: 0 0 20px;

@@ -282,7 +282,7 @@
 
 @media (max-width: 768px) {
   .section {
-    padding: 64px 0;
+    padding: 40px 0 0;
     /* ⬆️ уменьшенный внешний отступ */
   }
 
@@ -298,6 +298,7 @@
   .smallCard,
   .guarantee {
     padding: 32px;
+    min-height: auto;
     /* ⬆️ уменьшение внутренних отступов */
   }
 
@@ -309,7 +310,16 @@
   .imageCard {
     min-height: 300px;
   }
+  .smallTitle {
+    font-weight: 500;
+    font-size: 16px;
+  }
+  .smallText {
+    max-width: 100%;
 
+    font-weight: 400;
+    font-size: 16px;
+  }
   .title {
     font-size: 38px;
   }
@@ -363,7 +373,7 @@
   .statTextDark,
   .smallText,
   .list li {
-    font-size: 15px;
+    font-size: 13px;
   }
 
   .statValue,
@@ -373,7 +383,7 @@
 
   .smallTitle,
   .guaranteeTitle {
-    font-size: 20px;
+    font-size: 13px;
   }
 
   .decor {

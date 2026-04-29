@@ -35,8 +35,6 @@
   padding-top: 90px; /* как в home */
 }
 
-
-
 /* ================= TEXT ================= */
 
 .text {
@@ -139,7 +137,7 @@
 @media (max-width: 1024px) {
   .section {
     height: auto;
-    padding-bottom: 48px;
+    padding-bottom: 40px;
   }
 
   .row {
@@ -162,17 +160,61 @@
 }
 
 @media (max-width: 768px) {
+  .section {
+    height: 360px;
+    min-height: 400px;
+    padding-bottom: 0;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .container {
+    height: 100%;
+  }
+
   .row {
-    padding-top: 56px;
-    gap: 24px;
+    box-sizing: border-box;
+    justify-content: flex-start;
+    height: 100%;
+    padding-top: 40px;
+    gap: 30px;
+  }
+
+  .text {
+    width: 300px;
+    max-width: 100%;
+    gap: 20px;
   }
 
   .title {
-    font-size: 34px;
+    font-size: 28px;
+    line-height: 104%;
   }
 
   .description {
-    font-size: 16px;
+    width: 300px;
+    max-width: 100%;
+    font-size: 13px;
+    line-height: 130%;
+    letter-spacing: 0;
+  }
+
+  .bottom {
+    padding-bottom: 0;
+  }
+
+  .chips {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+  }
+
+  .chip {
+    box-sizing: border-box;
+    min-height: 33px;
+    padding: 12px 20px;
+    font-size: 13px;
+    line-height: 104%;
   }
 
   .cta {
@@ -180,4 +222,3 @@
     justify-content: center;
   }
 }
-
