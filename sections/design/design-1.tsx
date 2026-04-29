@@ -24,7 +24,7 @@ export function DesignUp() {
           <div className={styles.topRow}>
             <h2 className={styles.subtitle}>
               Комплексные решения <br />
-              побезопасности
+              по безопасности
             </h2>
 
             <p className={styles.description}>
