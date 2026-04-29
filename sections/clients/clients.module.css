@@ -109,17 +109,52 @@
     font-size: 32px;
   }
 
+  .section {
+    padding: 40px 0 40px;
+  }
+
   .text {
     font-size: 18px;
   }
 
   .grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 7px;
   }
-}
 
-@media (max-width: 480px) {
-  .grid {
-    grid-template-columns: 1fr;
+  .card {
+    height: 47px;
+    padding: 0;
+    border-radius: 6px;
+    overflow: hidden;
+  }
+
+  .logo {
+    width: auto;
+    max-height: auto;
+    height: auto;
+  }
+  .lists {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    margin-top: 30px;
+
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 24px 20px;
+  }
+
+  .listColumn {
+    width: 100%;
+    background: transparent;
+    border-radius: 0;
+    padding: 0;
+
+    gap: 5px;
+  }
+
+  .listColumn + .listColumn {
+    margin-top: 5px;
   }
 }
