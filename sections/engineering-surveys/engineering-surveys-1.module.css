@@ -85,6 +85,9 @@
 }
 
 @media (max-width: 768px) {
+  .section {
+    padding: 40px 0 40px;
+  }
   .top {
     grid-template-columns: 1fr;
   }
@@ -111,19 +114,10 @@
 
   .title {
     font-size: 30px;
+    margin-bottom: 40px;
   }
 
   .text {
     font-size: 18px;
-  }
-}
-
-@media (max-width: 480px) {
-  .title {
-    font-size: 24px;
-  }
-
-  .button {
-    padding: 12px 20px;
   }
 }
