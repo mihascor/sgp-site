@@ -70,25 +70,15 @@
 }
 
 @media (max-width: 768px) {
+  .section {
+    padding: 0 0 80px;
+  }
   .title {
     font-size: 32px;
   }
 
   .grid {
-    gap: 20px;
-  }
-}
-
-@media (max-width: 480px) {
-  .grid {
     grid-template-columns: 1fr;
-  }
-
-  .title {
-    font-size: 26px;
-  }
-
-  .cardContent {
-    padding: 20px;
+    gap: 20px;
   }
 }

@@ -133,11 +133,17 @@
 }
 
 @media (max-width: 768px) {
+  .section {
+    padding: 60px 0 80px;
+  }
   .title,
   .subtitle {
     font-size: 32px;
   }
-
+  .grid {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+  }
   .text {
     font-size: 18px;
   }
@@ -153,15 +159,5 @@
 
   .statText {
     font-size: 16px;
-  }
-}
-
-@media (max-width: 480px) {
-  .grid {
-    grid-template-columns: 1fr;
-  }
-
-  .stats {
-    flex-direction: column;
   }
 }
