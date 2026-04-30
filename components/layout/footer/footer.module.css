@@ -59,3 +59,19 @@
     text-align: right;
   }
 }
+@media (max-width: 480px) {
+  .row {
+    align-items: flex-start;
+    gap: 13px;
+  }
+
+  .copy {
+    flex: 1 1 auto;
+    text-align: left;
+  }
+
+  .link {
+    flex: 0 1 auto;
+    text-align: right;
+  }
+}
