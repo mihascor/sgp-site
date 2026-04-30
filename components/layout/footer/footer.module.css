@@ -22,6 +22,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  box-sizing: border-box;
 }
 
 /* левый текст */
@@ -51,11 +52,13 @@
 
   .copy {
     flex: 1 1 auto;
+    min-width: 0;
     text-align: left;
   }
 
   .link {
     flex: 0 1 auto;
+    min-width: 0;
     text-align: right;
   }
 }
@@ -63,15 +66,18 @@
   .row {
     align-items: flex-start;
     gap: 13px;
+    padding-right: 16px;
   }
 
   .copy {
     flex: 1 1 auto;
+    min-width: 0;
     text-align: left;
   }
 
   .link {
     flex: 0 1 auto;
+    min-width: 0;
     text-align: right;
   }
 }
