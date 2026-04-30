@@ -290,7 +290,11 @@ export function Header() {
                 Контакты
               </Link> */}
 
-              <Link href="/contacts" className={styles.contactsLink}>
+              <Link
+                href="/contacts"
+                className={styles.contactsLink}
+                onClick={closeAllMenus}
+              >
                 <span className={styles.dot}></span>
                 Контакты
               </Link>

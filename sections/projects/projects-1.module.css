@@ -148,8 +148,14 @@
     font-size: 18px;
   }
 
+  .stats {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
   .statCard {
-    width: 180px;
+    flex: 1 1 140px;
+    width: auto;
     height: 110px;
   }
 
